@@ -1,0 +1,872 @@
+html, body{
+	font-family: 'Raleway',sans-serif !important;
+	overflow-x: hidden;
+	width: 100%;
+  scroll-behavior: smooth;
+  color:#666;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
+
+.navbar-social {
+  position: fixed;
+  z-index: 10;
+  width:100%;
+}
+.bg-blue {
+  background-color: #00487c;
+}
+.btn-read{
+	background: #4aadce;
+	border-bottom: 0;
+	color: #01487c;
+  font-size: 15px;
+  font-weight: 700;
+  height: auto;
+  line-height: 40px;
+	min-width: 240px;
+  text-transform: uppercase;
+}
+
+.btn-read:hover{
+	background: #01487c;
+	border-bottom: 0 !important;
+  color: #FFFFFF;
+}
+
+.btn-read:nth-of-type(2){
+background: #01487c;
+	border-bottom: 0;
+	color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  height: auto;
+	min-width: 240px;
+  text-transform: uppercase;
+}
+.btn-read:nth-of-type(2):hover{
+background: #4aadce;
+	border-bottom: 0 !important;
+  color: #01487c;
+}
+
+.menu-header {
+	color: #FFFFFF;
+  margin: 0;
+  padding: 10px 0 10px;
+}
+
+.menu-header li{
+  float: left;
+	list-style: none;
+  padding-right: 12px;
+}
+
+.menu-header li:last-of-type{
+  padding-right: 0;
+}
+
+.menu-header li a{
+  color: #FFFFFF;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.menu-header img{
+	display: none;
+}
+
+.internal-menu{
+	padding: 0 15px;
+}
+
+.internal-menu .menu-header{
+	padding: 10px 0;
+}
+
+.internal-menu .mt-2{
+	margin-top: 0 !important;
+}
+
+.menu-full li{
+	float: none;
+	padding-bottom: 5px;
+	padding-right: 0;
+}
+
+.menu-full.float-right{
+	text-align: right;
+}
+
+.header-sep{
+	border-top: 2px solid #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+.header-logo{
+	margin-top: 15px;
+	max-width: 240px;
+}
+
+
+.h1-hide{
+	display: none;
+}
+
+.blog-header{
+	margin: 50px 0 50px;
+  min-height: 140px;
+}
+.blog-header h1{
+	color: #4aaccf;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0px 5px 15px #00487C29;
+  margin-bottom:10px;
+}
+
+.blog-header h2{
+	color: #01487c;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	text-shadow: 0px 5px 15px #00487C29;
+}
+
+.blog-header p{
+	color: #01487c;
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+.posts-section h3{
+	color: #01487c;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.cat-list{
+	columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+	list-style: none;
+	margin: 15px 0 0;
+	padding: 0;
+}
+
+.cat-list li{
+	margin-bottom: 10px;
+}
+
+.cat-list li a{
+	border-bottom: 2px transparent;
+	color: #4aadce;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.cat-list li a:hover{
+	border-bottom: 2px solid #4aadce;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.notes{
+	margin-top: 20px !important;
+	padding-top: 0 !important;
+}
+
+.post.px-4{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.post .img-overlay{
+	display: block;
+	position: relative;
+}
+
+.post .img-overlay::before{
+	background: transparent;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: all 0.3s;
+	width: 100%;
+	z-index: 1;
+}
+
+.post .img-overlay:hover:before{
+	background: rgba(74,139,207,0.5);
+}
+
+.post h4{
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+
+.post h4 a{
+	border-bottom: 2px transparent;
+	color: #4AACCF;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.post h4 a:hover{
+	border-bottom: 2px solid #4aadce;
+}
+
+.post p{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 28px;
+}
+
+.post p a{
+	border-bottom: 2px transparent;
+	color: #000000;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.post p a:hover{
+	border-bottom: 2px solid #4aadce;
+}
+
+.arrow{
+	background-color: transparent;
+	border: 2px solid #4aadce;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	font-size: 40px;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+}
+
+.arrow,.arrow:focus,.arrow:hover{
+	outline:none !important;
+}
+.hs-rss-byline{
+  color:#666;
+}
+.arrow span{
+	display: block;
+	font-size: 0;
+	height: 35px;
+	left: 0;
+	line-height: 0;
+	position: absolute;
+	top: 0;
+	width: 40px;
+}
+
+.arrow-prev{
+	left: 0;
+}
+
+.arrow-prev span{
+	background: url('https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/arrow-left.svg') no-repeat center center;
+	background-size: 20px 20px;
+}
+
+.arrow-next{
+	right: 0;
+}
+
+.arrow-next span{
+	background: url('https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/arrow-left.svg') no-repeat center center;
+	background-size: 20px 20px;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+footer{
+	background: #575859;
+	color: #E8EDDF;
+}
+
+footer ul{
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+.link-blue{
+	color: #4AACCF;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+footer ul a {
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+footer ul a:hover {
+	color: #FFFFFF;
+}
+
+footer .img-fluid{
+	max-width: 180px;
+}
+
+.mt-list{
+	margin-top: 0;
+}
+
+
+.blog-section h2, .blog-section h3, .blog-section h4, .blog-section h5, .blog-section h6 {
+	color: #00487C;
+	font-weight: 700;
+}
+
+.blog-section ul.info {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.blog-section ul.info p{
+	margin: 0;
+}
+
+.blog-section a {
+	color: #4A8BCF;
+}
+
+
+
+
+
+
+
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.header-bg::before{
+		display: none;
+	}
+
+	.header-logo{
+		margin-top: -160px;
+		max-width: 200px;
+	}
+
+	.menu-header img{
+		display: inline-block;
+	}
+
+	.internal-menu{
+		padding: 0;
+	}
+
+	.internal-menu .mt-2{
+		margin-top: .5rem!important;
+	}
+	
+	.blog-header{
+		margin: 150px 0 75px;
+		max-width: 750px;
+	}
+	
+	.blog-header h2{
+		color: #4AACCF;
+		font-size: 37px;
+		font-weight: 700;
+		line-height: 52px;
+		text-shadow: 0px 5px 15px #00487C29;
+	}
+	
+	.blog-header p{
+		font-size: 24px;
+		line-height: 34px;
+	}	
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.header-gradient{
+		background: rgb(74,139,207);
+		background: linear-gradient(180deg, rgba(74,139,207,1) 0%, rgba(74,139,207,1) 35%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+		left: 0;
+		min-height: 213px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 0;
+	}
+
+	.header-logo{
+		margin-top: 10px;
+		max-width: 320px;
+	}
+
+	.menu-header {
+		color: #FFFFFF;
+		margin: 0;
+		padding: 15px 0 10px;
+	}
+	
+	.menu-header li{
+		float: left;
+		list-style: none;
+		padding-right: 20px;
+	}
+
+	.menu-header li a{
+		font-size: 16px;
+	}
+
+	.notes{
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.post.px-4{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.posts-section h3{
+		font-size: 40px;
+	}
+	
+	.cat-list{
+		columns: 1;
+  	-webkit-columns: 1;
+  	-moz-columns: 1;
+		margin: 30px 0 0;
+	}
+	.cat-list li{
+		margin-bottom: 16px;
+	}
+	
+	.cat-list li a{
+		font-size: 30px;
+	}
+
+	footer .img-fluid{
+		max-width: 180px;
+	}
+
+	.mt-list{
+		margin-top: 145px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.header-logo{
+		margin-top: -30px;
+		max-width: 180px;
+	}
+  .height-100-desk{
+    height:100%;
+  }
+  .align-center-desk{
+    align-items: center;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.header-logo{
+		margin-top: -30px;
+		max-width: 320px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-nav-section .nav-link, .product-nav-section .nav-link-collapse {
+	color: #4aadce;
+  font-weight: 700;
+	margin-right: 30px;
+	padding: 0;
+}
+
+
+.product-nav-section .nav-pills .nav-link.active, .product-nav-section .nav-pills .show>.nav-link, .product-nav-section .nav-pills .nav-link:hover, .product-nav-section .nav-pills .nav-link-collapse.active, .product-nav-section .nav-pills .show>.nav-link-collapse, .product-nav-section .nav-pills .nav-link-collapse:hover {
+	background: transparent;
+	color: #01487c;
+}
+
+.product-nav-section .flex-column .nav-link, .product-nav-section .flex-column .nav-link-collapse {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+@media(max-width: 576px) {
+	.product-nav-section .flex-column .nav-link, .product-nav-section .flex-column .nav-link-collapse {
+		margin-bottom: 10px;
+	}
+}
+
+
+@media(max-width: 992px) {
+	.product-nav-section .nav{
+		display: block;
+		width: 100%;
+	}
+
+	.product-nav-section .nav-item .nav-link, .product-nav-section .nav-item .nav-link-collapse{
+		display: block;
+		margin-right: 0;
+	}
+}
+
+
+.info-section img, .upper-lower-section img{
+	width: 100%;
+}
+
+.info-section h3, .upper-lower-section h3{
+	color: #00487C;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.info-section p, .upper-lower-section p {
+	font-size: 18px;
+}
+
+@media(max-width: 768px) {
+	.info-section h3, .upper-lower-section h3{
+		font-size: 30px;
+	}
+  
+  .blog-header h2 {
+    color: #01487c;
+  }
+}
+
+
+
+
+
+
+.carousel-section {
+	background: transparent linear-gradient(180deg, #016FE2 0%, #013871 100%) 0% 0% no-repeat padding-box;
+	color: #FFFFFF;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.carousel-section h2{
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.carousel-section .owl-carousel .arrow{
+	border: 2px solid #FFFFFF;
+}
+
+.carousel-section .owl-carousel .arrow.arrow-prev{
+	left: -10px;
+}
+
+.carousel-section .owl-carousel .arrow.arrow-prev span{
+	background: url('https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/arrow-left-white.svg') no-repeat center center;
+}
+
+
+.carousel-section .owl-carousel .arrow.arrow-next{
+	right: -10px;
+}
+
+.carousel-section .owl-carousel .arrow.arrow-next span{
+	background: url('https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/arrow-left-white.svg') no-repeat center center;
+}
+
+
+@media(max-width: 768px) {
+	.carousel-section h2{
+		font-size: 30px;
+	}
+
+	.carousel-section .owl-carousel .arrow.arrow-prev{
+		left: 0;
+	}
+
+	.carousel-section .owl-carousel .arrow.arrow-next{
+		right: 0;
+	}
+}
+
+.testimonials-section h2{
+	color: #00487C;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.testimonials-section p{
+	font-size: 18px;
+}
+
+
+.card-testimonial p{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.card-testimonial span{
+	color: #4AACCF;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
+@media(max-width: 768px) {
+	.testimonials-section h2{
+		font-size: 30px;
+		font-weight: 700;
+	}
+}
+
+
+
+.faq-section h2{
+	color: #00487C;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+
+.faq-section .tab-content>.active{
+	padding: 0 50px 0px 0;
+}
+
+@media(max-width: 992px) {
+	.faq-section .tab-content>.active{
+		padding: 0 0 10px;
+	}
+}
+
+
+@media(max-width: 768px) {
+	.faq-section h2{
+		font-size: 30px;
+		font-weight: 700;
+	}
+}
+
+
+@media(max-width: 576px) {
+	.faq-section .tab-content>.active{
+		padding: 20px 0 20px;
+	}
+}
+
+
+
+
+
+
+
+
+.safety-program-section h2 {
+	color: #00487C;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.step-container {
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.step-container .step {
+	background: #00487C;
+	height: 180px;
+	color: #FFFFFF;
+	margin-left: 80px;
+}
+
+.step-container .step .number{
+	background: #4BC1CF;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 100px;
+	font-weight: 700;
+	height: 190px;
+	left: 0;
+	line-height: 150px;
+	position: absolute;
+	text-align: center;
+	top: -5px;
+	width: 190px;
+}
+
+.step-container .step .txt {
+	font-size: 15px;
+	line-height: 19px;
+	margin-left: auto;
+	padding: 0 10px 0;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+}
+
+@media(max-width: 1200px) {
+	.step-container .step .txt {
+		width: 75%;
+	}
+}
+
+@media(max-width: 992px) {
+	.step-container .step .txt {
+		width: 82%;
+	}
+}
+
+@media(max-width: 768px) {
+	.safety-program-section h2{
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+	.step-container .step .txt {
+		width: 78%;
+	}
+}
+
+@media(max-width: 576px) {
+	.step-container .step{
+		height: auto;
+		margin-left: 0;
+		min-height: 70px;
+	}
+
+	.step-container .step .number{
+		background: #4BC1CF;
+		float: left;
+		font-size: 40px;
+		height: 60px;
+		left: 5px;
+		line-height: 50px;
+		position: relative;
+		text-align: center;
+		top: 5px;
+		width: 60px;
+	}
+
+	.step-container .step .txt {
+		padding: 10px;
+		top: 0;
+		transform: none;
+		width: 75%;
+	}
+}
+
+
+
+
+
+.certifications-section h2{
+	color: #00487C;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.certifications-section p {
+	font-size: 18px;
+}
+
+@media(max-width: 768px) {
+	.certifications-section h2{
+		font-size: 30px;
+		font-weight: 700;
+	}
+}
+
+
+.cta-call-btn {
+  background: rgb (74, 173, 206) !important;
+  border-radius: 6px !important;
+  border-width: 0px !important;
+  color: rgb(255,255,255) !important;
+  font-family: sans-serif !important;
+  height: auto !important;
+  padding: 6px 18px !important;
+  text-shadow: none !important;
+  transition: all 0.5s !important;
+  width: auto !important;
+  font-size: 24px !important;
+  line-height: 1.5em !important;
+  text-decoration: none !important;
+}
+
+.cta-call-btn:hover {
+  background: rgb(1, 72, 124) !important;
+}
+

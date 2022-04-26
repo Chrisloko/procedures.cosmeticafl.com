@@ -1,0 +1,23 @@
+<style>
+  .product-nav-section .menu-bar{
+    border-bottom: 2px solid #00487c;
+  }
+</style>
+<section class="product-nav-section pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 {{ "menu-bar" if module.barr_de_men_ }}">
+
+        <ul class="nav nav-pills mb-3" id="pills-tab">
+          {% for item in module.men_ %}
+          <li class="nav-item">
+            <a class="nav-link nav-scroll" href="{{item.nombre_del_id}}">
+              {{ item.texto }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

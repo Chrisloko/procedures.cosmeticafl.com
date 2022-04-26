@@ -1,0 +1,58 @@
+[ {
+  "id" : "21645691-eef3-0775-49ab-d2602a8b7e26",
+  "name" : "text_alignment",
+  "display_width" : null,
+  "label" : "Text Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "text_left", "Text Left" ], [ "text_center", "Text Center" ], [ "text_right", "Text Right" ] ],
+  "type" : "choice",
+  "default" : "text_center"
+}, {
+  "id" : "09e5d149-6fa1-b2fa-3d73-352880b395e8",
+  "name" : "heading_types",
+  "display_width" : null,
+  "label" : "Heading Types",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "h1", "H1" ], [ "h2", "H2" ], [ "h3", "H3" ], [ "h4", "H4" ], [ "h5", "H5" ], [ "h6", "H6" ] ],
+  "type" : "choice",
+  "default" : "h2"
+}, {
+  "id" : "a0ba99b6-b90a-e78f-60a9-fd86d76209b4",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Page Title Here"
+}, {
+  "id" : "3255848e-409c-3cc2-7e9a-0ddac38ec5c2",
+  "name" : "subheading",
+  "display_width" : null,
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Below is a list of all the blog posts you are posting that your<br> visitors might be interested in..."
+}, {
+  "id" : "cd5ecd76-9972-2197-4869-68eb6bf50ea5",
+  "name" : "add_custom_class",
+  "display_width" : null,
+  "label" : "Add Custom Class",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

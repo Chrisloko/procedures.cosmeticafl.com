@@ -1,0 +1,343 @@
+[ {
+  "id" : "ac953f2e-196b-4d19-9939-2230bc7fbe66",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p class=\"desc-text\">You can trust the amazing team of specialists at Cosmetica Plastic Surgery. To ensure your maximum safety and comfort, we created our facility in accordance with strict national standards.</p>\n<ul class=\"footer-contact\">\n<li><a href=\"tel:+17723371717\"> <i class=\"fa fa-phone\"></i> (772) 337-1717</a></li>\n<li><i class=\"fa fa-clock\"></i> Monday – Friday: 9:00 AM – 5:00 PM</li>\n<li><a href=\"mailto:sales@cosmeticafl.com\"><i class=\"fa fa-envelope\"></i> sales@cosmeticafl.com</a></li>\n<li><a href=\"https://goo.gl/maps/6TAZJqjr7VQKbeVP9\"><i class=\"fa fa-map\"></i> 1941 SE Port St. Lucie Blvd, Port St. Lucie, FL 34952</a></li>\n</ul>"
+}, {
+  "id" : "f3a76f6c-5767-3b20-71a3-76ac963ffec6",
+  "name" : "men_1",
+  "display_width" : null,
+  "label" : "Menú 1",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "47f97a10-fb5a-8ff9-4513-ec2d384a6e2d",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "FACE"
+  }, {
+    "id" : "363a847e-6043-0ac5-892f-5a73b28de0bf",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Enlace",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  } ]
+}, {
+  "id" : "79e79ed6-33c7-140a-811c-8f46cecdaf56",
+  "name" : "men_2",
+  "display_width" : null,
+  "label" : "Menú 2",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "efdffb39-a691-a705-4a49-4bd8fd4a87b1",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "FACE"
+  }, {
+    "id" : "87ac4311-336f-8221-1ecb-ee5dd42e3b93",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Enlace",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  } ]
+}, {
+  "id" : "0d652392-eb37-0683-02b5-214bc562b363",
+  "name" : "enlace_privacy",
+  "display_width" : null,
+  "label" : "Enlace Privacy",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/lp-fue-hair-transplant-s2020-services-cosmetica?hs_preview=CBuNeBFn-50365656952",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "dadc59aa-0435-62be-ccf4-f468d21af424",
+  "name" : "enlace_terms",
+  "display_width" : null,
+  "label" : "Enlace Terms",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/lp-fue-hair-transplant-s2020-services-cosmetica?hs_preview=CBuNeBFn-50365656952",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "0900d226-5de9-bd9e-7e46-3604897bc884",
+  "name" : "texto_privacy",
+  "display_width" : null,
+  "label" : "Texto Privacy",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "HIPAA Privacy Police"
+}, {
+  "id" : "e4b1ad70-ccc4-7115-c705-892330bbdbe1",
+  "name" : "texto_terms",
+  "display_width" : null,
+  "label" : "Texto Terms",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Terms & Conditions"
+}, {
+  "id" : "543aa0fc-138f-2831-0713-ae978255436b",
+  "name" : "enlace_facebook",
+  "display_width" : null,
+  "label" : "Enlace Facebook",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "48fb8a04-7dcf-5936-8d21-c2d56e32b6fa",
+  "name" : "enlace_youtube",
+  "display_width" : null,
+  "label" : "Enlace Youtube",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "30efeabb-c202-196d-de37-8374ce87940a",
+  "name" : "enlace_twitter",
+  "display_width" : null,
+  "label" : "Enlace Twitter",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "fb6b3c1b-b9d8-b5cd-2e37-8bce77bf1972",
+  "name" : "enlace_instagram",
+  "display_width" : null,
+  "label" : "Enlace Instagram",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "e0870b8b-41ce-065a-48e7-778788d21133",
+  "name" : "footer_derechos_reservados",
+  "display_width" : null,
+  "label" : "Texto Derechos Reservados",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p style=\"font-size: 14px; text-align: center; line-height: 1.7em;\"><a href=\"https://www.cosmeticafl.com/terms-conditions\" target=\"_blank\" rel=\"noopener\">Terms &amp; Conditions</a> | <a href=\"https://www.cosmeticafl.com/hipaa-privacy-policy/\" target=\"_blank\" rel=\"noopener\">HIPPA Privacy Policy</a></p>\n<p style=\"font-size: 14px; text-align: center; line-height: 1.7em;\">Copyright © 2021 | Cosmetica Plastic Surgery &amp; Anti-Aging. All Rights Reserved. Individual results may vary.</p>"
+} ]

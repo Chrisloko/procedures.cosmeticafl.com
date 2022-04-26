@@ -1,0 +1,46 @@
+[ {
+  "id" : "da40a559-7c86-0da2-e551-30c236d109a5",
+  "name" : "padding_seccion",
+  "display_width" : null,
+  "label" : "Padding seccion",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "60px 0"
+}, {
+  "id" : "9f8a4060-f247-0754-e77e-48bf2ba7d610",
+  "name" : "titulo",
+  "display_width" : null,
+  "label" : "Titulo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Butt shapes"
+}, {
+  "id" : "4354a269-a362-6aaf-57b0-1787b517cc69",
+  "name" : "imagen",
+  "display_width" : null,
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/bbl1.jpg",
+    "alt" : "bbl1",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 800,
+    "max_width" : 1920,
+    "max_height" : 800
+  }
+} ]

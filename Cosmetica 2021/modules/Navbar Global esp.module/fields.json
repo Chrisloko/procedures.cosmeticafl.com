@@ -1,0 +1,316 @@
+[ {
+  "id" : "f768e980-323f-db5d-0f76-e7570c1d1b61",
+  "name" : "lista_men_",
+  "display_width" : null,
+  "label" : "Lista menú",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "d154d542-33cc-232b-c45c-981a588e9819",
+    "name" : "texto_men_",
+    "display_width" : null,
+    "label" : "Texto Menú",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Texto"
+  }, {
+    "id" : "a29e1e16-e55e-a068-af75-e6e457a0fc9f",
+    "name" : "enlace_men_",
+    "display_width" : null,
+    "label" : "Enlace Menú",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "b555917c-353d-ff94-7544-94c602695a3f",
+    "name" : "submen_",
+    "display_width" : null,
+    "label" : "Submenú",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "9a933789-c1ae-ea54-ffa8-d0e5c7ba237c",
+    "name" : "lista_submen_",
+    "display_width" : null,
+    "label" : "Lista submenú",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "2803c71f-9e92-6fca-bd3c-aab50f95d319",
+      "name" : "texto_men_",
+      "display_width" : null,
+      "label" : "Texto Menú",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Texto"
+    }, {
+      "id" : "5709b509-be2d-f359-e0c2-0dbb2ffdb35d",
+      "name" : "enlace_men_",
+      "display_width" : null,
+      "label" : "Enlace Menú",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "texto_men_" : "Texto",
+      "enlace_men_" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "texto_men_" : "Texto",
+    "enlace_men_" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "submen_" : false,
+    "lista_submen_" : [ {
+      "texto_men_" : "Texto",
+      "enlace_men_" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "texto_men_" : "Texto",
+    "enlace_men_" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "submen_" : false,
+    "lista_submen_" : [ {
+      "texto_men_" : "Texto",
+      "enlace_men_" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "texto_men_" : "Texto",
+    "enlace_men_" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "submen_" : false,
+    "lista_submen_" : [ {
+      "texto_men_" : "Texto",
+      "enlace_men_" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "texto_men_" : "Texto",
+    "enlace_men_" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "submen_" : false,
+    "lista_submen_" : [ {
+      "texto_men_" : "Texto",
+      "enlace_men_" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "texto_men_" : "Texto",
+    "enlace_men_" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "submen_" : false,
+    "lista_submen_" : [ {
+      "texto_men_" : "Texto",
+      "enlace_men_" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://procedures.cosmeticafl.com/plastic-surgery-general?hs_preview=pQBLJBBn-50434996895&hsLang=en",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ]
+}, {
+  "id" : "3dc3a186-6f05-01fa-0561-e6d8d457e023",
+  "name" : "enlace_logo",
+  "display_width" : null,
+  "label" : "Enlace Logo",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/lp-botox-s2020-services-cosmetica-0?hs_preview=VPweRHLR-51190608468#",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "8ce573b2-aee9-2e50-6b19-1d7819f40eb3",
+  "name" : "enlace_facebook",
+  "display_width" : null,
+  "label" : "Enlace Facebook",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "5a926aae-991e-ea16-bccb-94a12565e832",
+  "name" : "enlace_instagram",
+  "display_width" : null,
+  "label" : "Enlace Instagram",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "f2fdd8b6-8141-63c3-bef3-ed7943c2ec71",
+  "name" : "enlace_youtube",
+  "display_width" : null,
+  "label" : "Enlace YouTube",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+} ]

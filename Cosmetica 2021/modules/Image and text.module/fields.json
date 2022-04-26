@@ -1,0 +1,127 @@
+[ {
+  "id" : "0f229d4c-1f16-08fe-3f66-368e7c66c1b8",
+  "name" : "identificador",
+  "display_width" : null,
+  "label" : "Identificador de seccion",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "46a9bb32-8d64-e66d-ff04-0813272d1655",
+  "name" : "ancho_columna_izq",
+  "display_width" : null,
+  "label" : "Ancho columna Izq",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "1 a 12",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "4"
+}, {
+  "id" : "c3598519-1946-9ac0-8fd6-7d8bdb1517b9",
+  "name" : "ancho_columna_derecha",
+  "display_width" : null,
+  "label" : "Ancho columna derecha",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "1 a 12",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "8"
+}, {
+  "id" : "8f2e582b-b0db-f67c-e9c7-379ef9cc3613",
+  "name" : "color_fondo",
+  "display_width" : null,
+  "label" : "Color fondo",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#e2e2e2",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7a67a56c-b017-f317-a046-ffd57afdfd00",
+  "name" : "padding_seccion",
+  "display_width" : null,
+  "label" : "Padding seccion",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "60px 0"
+}, {
+  "id" : "fb5e18fd-acd2-f382-a820-97f523c38eff",
+  "name" : "con_titulo",
+  "display_width" : null,
+  "label" : "Con titulo",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "9f8a4060-f247-0754-e77e-48bf2ba7d610",
+  "name" : "titulo",
+  "display_width" : null,
+  "label" : "Titulo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Butt shapes"
+}, {
+  "id" : "4354a269-a362-6aaf-57b0-1787b517cc69",
+  "name" : "imagen",
+  "display_width" : null,
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/bbl1.jpg",
+    "alt" : "bbl1",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 800,
+    "max_width" : 1920,
+    "max_height" : 800
+  }
+}, {
+  "id" : "f3f3d64d-b9c6-fe6c-30ca-86551a2fdb98",
+  "name" : "contenido",
+  "display_width" : null,
+  "label" : "Contenido",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Praesent ultricies erat nunc. Morbi nibh mauris, faucibus vitae ultricies eget, volutpat non ligula. Fusce augue sem, cursus quis lorem luctus, hendrerit dictum eros. Nulla cursus volutpat elit ac elementum. Maecenas scelerisque aliquam risus convallis volutpat. Praesent semper, leo a ultrices gravida, ex odio imperdiet leo, id laoreet ex leo eu nulla.</p>"
+}, {
+  "id" : "dcbe8d4d-ccf3-646f-d1ad-669961148d7a",
+  "name" : "max_height_image_in_px",
+  "display_width" : null,
+  "label" : "Max height image in px",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "auto"
+} ]

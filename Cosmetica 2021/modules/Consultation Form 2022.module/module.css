@@ -1,0 +1,102 @@
+#block-2 .form-title, #block-3 .form-title {
+  display:none;
+}
+.upper-lower-section h2{
+  color: #01487c;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px){
+  .upper-lower-section h2 {
+    font-size: 30px;
+  }
+}
+
+fieldset {
+  line-height:1;
+}
+fieldset.form-columns-1 .input {
+    margin-right: 0px!important;
+}
+fieldset.form-columns-2 .hs_email .input{
+  margin-right: 0px!important;
+}
+fieldset .hs-input {
+  border: 1px solid transparent;
+  background-color:#dae9e6;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: 700;
+  color: #01487c;
+  width: 100%;
+}
+fieldset .hs-input::placeholder {
+  font-weight: 700;
+  color: #01487c;
+}
+#block-3 textarea {
+  min-height:60px;
+}
+.hs-error-msgs{
+  color: #FF0000;
+  font-size: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset.form-columns-1, fieldset.form-columns-2, fieldset.form-columns-3{
+  max-width: unset !important;
+}
+
+.hs-button{
+      background: #01487c !important;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 5px 38px;
+    transition: 0.3s ease!important;
+}
+
+.hs-button:hover{
+ background: #4aadce !important; 
+ color: #01487c!important;
+}
+
+fieldset label{
+  margin-bottom: 2px;
+}
+
+.mt-90{
+  margin-top: 90px;
+}
+
+fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+}
+
+.hs-input{
+  height: auto !important;
+}
+.actions {
+  text-align:right;
+}
+@media(max-width: 768px){
+  .mt-90{
+    margin-top: 0;
+  }
+  
+  fieldset.form-columns-2 .hs-input {
+    width: 100% !important;
+  }
+  fieldset.form-columns-2 .input {
+    margin-right:0!important
+  }
+  fieldset .hs-input {
+    font-size: 14px;
+  }
+}

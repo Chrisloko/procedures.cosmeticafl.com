@@ -1,0 +1,245 @@
+<style>
+.social-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list li{
+  float: left;
+  margin: 0 10px;
+}
+
+.social-list li a{
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.navbar-first{
+  background: rgba(30,32,43,0.73);
+  height: 70px;
+  position: fixed;
+  top: 43px !important;
+  width: 100%;
+  z-index: 11;
+}
+
+.navbar-first .dropdown-menu{
+  background: rgba(0, 0, 0, 0.3);
+  color: #FFFFFF;
+}
+.navbar-first .nav-item:hover .dropdown-menu{
+  display:block;
+}
+@media(min-width: 992px) {
+  .height-100-desk{
+    height:100%;
+  }
+  .align-center-desk{
+    align-items: center;
+  }
+}
+#navbar .dropdown-menu{
+  top:38px;
+}
+@media(max-width: 992px) {
+  .navbar-first{
+    background: none;
+    height: 50px;
+  }
+
+  .navbar-first > .container > .row {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.header-img-logo {
+  max-width: 60px !important;
+}
+
+.navbar-first .col-12{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media(max-width: 991px) {
+  .navbar-first .container {
+    max-width: unset;
+  }
+  .navbar-first .col-12{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+</style>
+<div class="navbar-social bg-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar">
+          <ul class="navbar-nav ml-auto social-list d-block">
+            <li>
+              {% set href = module.enlace_facebook.url.href %}
+              {% if module.enlace_facebook.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if module.enlace_facebook.no_follow %}
+              {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if module.enlace_facebook.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if module.enlace_facebook.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                 >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              {% set href = module.enlace_instagram.url.href %}
+              {% if module.enlace_instagram.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if module.enlace_instagram.no_follow %}
+              {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if module.enlace_instagram.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if module.enlace_instagram.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                 >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              {% set href = module.enlace_youtube.url.href %}
+              {% if module.enlace_youtube.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if module.enlace_youtube.no_follow %}
+              {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if module.enlace_youtube.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if module.enlace_youtube.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                 >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="navbar" class="navbar-first">
+  <div class="container height-100-desk">
+    <div class="row height-100-desk align-center-desk">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg p-0 navbar-dark">
+          {% set href = module.enlace_logo.url.href %}
+          {% if module.enlace_logo.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if module.enlace_logo.no_follow %}
+          {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if module.enlace_logo.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if module.enlace_logo.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             class="navbar-brand">
+            <img src="https://procedures.cosmeticafl.com/hubfs/Cosmetica%202021/logo-footer.svg" alt="Cosmetica" class="img-fluid header-img-logo" width="60" height="60">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto menu-header">
+              {% for item in module.lista_men_ %}
+              {% set href = item.enlace_men_.url.href %}
+              {% if item.enlace_men_.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if item.enlace_men_.no_follow %}
+              {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if item.enlace_men_.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+              {% endif %}
+              <li class="nav-item position-relative">
+                {% if item.submen_ %}
+                
+                <a class="nav-link position-relative" href="{{ item.liga_menu.url.href }}" id="navbarDropdownMenuLink{{loop.index}}" style="display: inline-block;">
+                    {{ item.texto_men_ }}
+                  </a>
+                  <a class="nav-link dropdown-toggle" href="#fo " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: inline-block" style="display: inline-block;">
+							
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink{{loop.index}}">
+
+
+                  {% for item2 in item.lista_submen_ %}
+                  {% set href = item2.enlace_men_.url.href %}
+                  {% if item2.enlace_men_.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  {% set rel = [] %}
+                  {% if item2.enlace_men_.no_follow %}
+                  {% do rel.append("nofollow") %}
+                  {% endif %}
+                  {% if item2.enlace_men_.open_in_new_tab %}
+                  {% do rel.append("noopener") %}
+                  {% endif %}
+                  <a href="{{ href }}"
+                     {% if item2.enlace_men_.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                     class="dropdown-item">
+                    {{ item2.texto_men_ }}
+                  </a>
+                  {% endfor %}
+                </div>
+
+
+                {% else %}
+                <a href="{{ href }}"
+                   {% if item.enlace_men_.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   class="nav-link position-relative">
+                  {{ item.texto_men_ }}
+                </a>
+
+                {% endif %}
+              </li>
+              {% endfor %}
+              <li class="my-2">
+                <img src="https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/language-icon.svg" alt="Language" class="img-fluid" />
+                <a href="{{ module.enlace_esp.url.href }}">
+                  ES</a> |
+                <a href="{{ module.enlace_eng.url.href }}">
+                  EN
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+</div>
+

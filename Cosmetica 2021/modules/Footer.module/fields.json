@@ -1,0 +1,293 @@
+[ {
+  "id" : "7282bddd-78e6-6be5-75c9-29709e0c1aed",
+  "name" : "men_1",
+  "display_width" : null,
+  "label" : "Menú 1",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "b5c4686b-c881-13c7-2d28-b2397edf6317",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Enlace",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "e1c1ec1a-82ff-42c5-26d2-0541f3ba77a7",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "FACE"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  } ]
+}, {
+  "id" : "67cf02b2-b8c0-c505-7ce2-edd5f730fb77",
+  "name" : "men_2",
+  "display_width" : null,
+  "label" : "Menú 2",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "edaf2ef7-5990-7c7a-5205-1938da840556",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Enlace",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "303b91b2-c25a-ebc6-57e4-7c3c3dfb02f5",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "FACE"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_field" : "FACE"
+  } ]
+}, {
+  "id" : "754cf5a5-7b30-d1bd-b27c-e8634ea56911",
+  "name" : "enlace_privacy",
+  "display_width" : null,
+  "label" : "Enlace Privacy",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/lp-fue-hair-transplant-s2020-services-cosmetica?hs_preview=CBuNeBFn-50365656952",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "c8426177-8f78-716f-2e87-d4081d08e946",
+  "name" : "texto_privacy",
+  "display_width" : null,
+  "label" : "Texto Privacy",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "HIPAA Privacy Police"
+}, {
+  "id" : "1389c973-75e3-239f-209a-8b07332861d1",
+  "name" : "enlace_terms",
+  "display_width" : null,
+  "label" : "Enlace Terms",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/lp-fue-hair-transplant-s2020-services-cosmetica?hs_preview=CBuNeBFn-50365656952",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "1db177af-710c-8ec0-e09e-f1f257839418",
+  "name" : "texto_terms",
+  "display_width" : null,
+  "label" : "Texto Terms",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Terms & Conditions"
+}, {
+  "id" : "b42e7ae2-8a7e-ad73-274e-143c1d4b92ba",
+  "name" : "enlace_facebook",
+  "display_width" : null,
+  "label" : "Enlace Facebook",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "aeccfd6f-438d-100d-b9f6-66065a7c0207",
+  "name" : "enlace_youtube",
+  "display_width" : null,
+  "label" : "Enlace YouTube",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "f28f5b05-6e56-ccc6-5f4a-758f85fc94a4",
+  "name" : "enlace_instagram",
+  "display_width" : null,
+  "label" : "Enlace Instagram",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "19d490a5-5e81-71a3-6de3-52ebd4d8204d",
+  "name" : "footer_derechos_reservados",
+  "display_width" : null,
+  "label" : "Footer Derechos Reservados",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p style=\"font-size: 16px; text-align: center;\">Copyright © 2021 | Cosmetica Plastic Surgery &amp;amp; Anti-Aging. All Rights Reserved. Individual results may vary.<br>Designed by Cosmetica Plastic Surgery &amp;amp; Anti-Aging</p>"
+} ]

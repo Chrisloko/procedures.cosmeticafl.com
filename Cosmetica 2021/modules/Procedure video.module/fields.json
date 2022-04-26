@@ -1,0 +1,61 @@
+[ {
+  "id" : "d047814e-78b9-cec8-7adf-665c3f5b9813",
+  "name" : "contenido",
+  "display_width" : null,
+  "label" : "Contenido",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Whats is a BBL?</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis pharetra nulla et fermentum. Quisque vehicula condimentum velit. Quisque dignissim tempus tortor eu vulputate. Nam facilisis odio et risus bibendum, a sollicitudin lectus vulputate. In ut ligula sit amet nisl dictum vestibulum ut eget massa. Proin ex leo, efficitur in tincidunt id, eleifend vitae enim. Etiam mollis pulvinar faucibus. Suspendisse consectetur fringilla justo, eget fermentum ex pellentesque non.</p>\n<p>Nunc commodo ligula sed augue rhoncus mollis. Ut vulputate ultrices mi, id vulputate mi dignissim ornare. Nulla mollis mauris eget sapien interdum interdum. Morbi nibh velit, mattis id dolor eget, congue auctor est. Fusce condimentum feugiat leo. Donec molestie odio ut odio varius, in feugiat lorem elementum. Integer tincidunt mi vel orci venenatis, in finibus mauris semper.</p>"
+}, {
+  "id" : "889e34c9-3948-4179-ea6f-e7ce54a50929",
+  "name" : "imagen_previa_webp",
+  "display_width" : null,
+  "label" : "Imagen previa webp",
+  "help_text" : "Imagen en formato webp",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "886d5bc3-c52f-2821-7e5d-03c658243e0a",
+  "name" : "imagen_previa",
+  "display_width" : null,
+  "label" : "Imagen previa",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/Tummy-Tuck-scaled.jpeg",
+    "alt" : "Tummy-Tuck-scaled",
+    "loading" : "lazy",
+    "width" : 2560,
+    "height" : 1410,
+    "max_width" : 2560,
+    "max_height" : 1410
+  }
+}, {
+  "id" : "c5bcfcc6-3cd6-4e86-fd44-d11249c5cbed",
+  "name" : "embed_youtube",
+  "display_width" : null,
+  "label" : "Embed Youtube",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "D1fCI8hL0EA"
+} ]

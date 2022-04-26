@@ -1,0 +1,36 @@
+<section id="block-{{ module.n_mero_de_bloque }}" class="carousel-section" style="background: {{ module.bg_color.color if module.bg_color.color != "" else "#007bff" }};">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pt-4">
+        <h2 class="text-center">{{ module.t_tulo }}</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="after-before-carousel owl-carousel owl-theme px-5">
+
+
+          {% for item in module.carrusel %}
+          <div class="item">
+
+            {% if item.image_field.src %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+            {% if item.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="325" height="325"' %}
+            {% elif item.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" width='325' height='325' "' %}
+            {% endif %}
+            {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+            <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid mb-2 carousel-border">
+            {% endif %}
+            {% if item.con_texto %}
+              <h4>{{item.pie_de_imagen}}</h4>
+            {% endif %} 
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

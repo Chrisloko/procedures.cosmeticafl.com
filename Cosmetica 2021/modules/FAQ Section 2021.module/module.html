@@ -1,0 +1,31 @@
+<section id="block-{{ module.n_mero_de_bloque }}" class="faq-section product-nav-section pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>FAQ</h2>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 col-md-5">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          {% for item in module.lista_de_preguntas %}
+          <a class="nav-link {{"active" if loop.index == 1}}" id="v-pills-{{loop.index}}-tab" data-toggle="pill" href="#v-pills-{{loop.index}}" role="tab" aria-controls="v-pills-{{loop.index}}" aria-selected="true">
+            {{ item.pregunta }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="tab-content" id="v-pills-tabContent">
+          {% for item in module.lista_de_preguntas %}
+
+          <div class="tab-pane fade {{"show active" if loop.index == 1}} response-paragraph" id="v-pills-{{loop.index}}" role="tabpanel" aria-labelledby="v-pills-{{loop.index}}-tab">
+            {{item.respuesta}}
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

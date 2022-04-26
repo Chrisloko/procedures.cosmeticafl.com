@@ -1,0 +1,12 @@
+defaultPortal: cosmetica-hs
+portals:
+  - name: cosmetica-hs
+    portalId: 8958354
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CJ7868CGMBIIAAUAAAAAAAwYkuOiBCD47LINKO7pDDIU9VDWHMiYpAAyJ_NK1Dmr_oAUJTg6IQAABEEAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAPEIUAggzkDTWKTVjZMCOZa-uNlpGZxlKA25hMVIAWgA
+        expiresAt: '2022-04-26T23:00:41.122Z'
+    personalAccessKey: >-
+      CiQ3MjdiZmFjNi0wNGQzLTRmZmQtYjYzNC00YzgxYzk1NTkxYTUQkuOiBBj47LINKhkABeaRgvMukX7v-wv410M-R1U51ICV3oeMSgNuYTE

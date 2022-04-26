@@ -1,0 +1,874 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 6,
+  "attachedStylesheets" : [ {
+    "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Coded File/style.css",
+    "type" : "cos_extension_resource"
+  }, {
+    "path" : "/Cosmetica 2021/assets/css/style.css",
+    "type" : "cos_extension_resource"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Coded File/jquery-3-3-1-latest.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Coded File/ClearScript.js"
+  } ],
+  "customHead" : "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css\">\n\n<script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n<script src=\"{{ get_asset_url('/Cosmetica 2021/assets/js/main.js') }}\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>\n\n<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1576825364503215",
+        "label" : "Hubdew Header Main",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Template/Hubdew Header Main.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1566907931399760",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "blog-banner",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_162888450363669",
+            "label" : "Image",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "text-align:center;  padding-bottom:5%;",
+              "img" : {
+                "alt" : "logo",
+                "height" : 69,
+                "loading" : "disabled",
+                "max_height" : 69,
+                "max_width" : 339,
+                "size_type" : "auto",
+                "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/logo.svg",
+                "width" : 339
+              },
+              "overrideable" : true,
+              "path" : "@hubspot/linked_image",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Image",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "text-align:center;  padding-bottom:5%;",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1566907930435755",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1567669603260207",
+                "label" : "Heading And Subheading",
+                "type" : "custom_widget",
+                "params" : {
+                  "add_custom_class" : "blog--banner-content",
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "heading" : "Plastic Surgery Blog",
+                  "heading_types" : "h1",
+                  "overrideable" : true,
+                  "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Custom Module/Heading And Subheading",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "subheading" : "Botox & Fillers, Liposuction, Face & Neck lift, FUE Hair Transplant and more. <br>Ask for our free consultation or look for honest info about plastic surgery.",
+                  "text_alignment" : "text_left",
+                  "widget_name" : "Heading And Subheading",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "container",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "blog-banner",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_162863409610036",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1566908277069845",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "clear-blog-listing",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1566907491703690",
+                "label" : "Module group",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "container",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 8,
+                    "name" : "module_151456959128069",
+                    "label" : "Module Group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_151456960811572",
+                        "label" : "Blog Content",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "blog_listing_source" : "<div class=\"blog-section\">\n    <div class=\"blog-listing-wrapper cell-wrapper\">\n        <div class=\"blog-section clear--blog-design\">\n            <div class=\"blog-listing-wrapper cell-wrapper\">\n                {# simple_list_page indicates the \"blog/all\" page, which is a list of links to every blog post #}\n                <div class=\"post-listing{% if simple_list_page %}-simple{% endif %}\">\n                    {% if blog_author %}\n                    <div class=\"hs-author-profile\">\n                        <h4 class=\"hs-author-name\">{{ blog_author.display_name }}</h4>\n                        {% if blog_author.avatar %} <div class=\"hs-author-avatar\"> <img src=\"{{ blog_author.avatar }}\" alt=\"{{ blog_author.display_name }}\"> </div> {% endif %}\n                        <div class=\"hs-author-bio\">{{ blog_author.bio }}</div>\n                        {% if blog_author.has_social_profiles %}\n                        <div class=\"hs-author-social-section\">\n                            <span class=\"hs-author-social-label\">Find me on:</span>\n                            <div class=\"hs-author-social-links\">\n                                {% if blog_author.facebook %}\n                                <a href=\"{{ blog_author.facebook }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-facebook\">&nbsp;</a>\n                                {% endif %}\n                                {% if blog_author.linkedin %}\n                                <a href=\"{{ blog_author.linkedin }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-linkedin\">&nbsp;</a>\n                                {% endif %}\n                                {% if blog_author.twitter %}\n                                <a href=\"{{ blog_author.twitter }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-twitter\">&nbsp;</a>\n                                {% endif %}\n                                {% if blog_author.google_plus %}\n                                <a href=\"{{ blog_author.google_plus }}?rel=author\" target=\"_blank\" class=\"hs-author-social-link hs-social-google-plus\">&nbsp;</a>\n                                {% endif %}\n                            </div>\n                        </div>\n                        {% endif %}\n                    </div>\n                    <h3 class=\"hs-author-listing-header\">Recent Posts</h3>\n                    {% endif %}\n                    {% for content in contents %}\n                    <div class=\"post-item\">\n                        {% if not simple_list_page %}\n                        <div class=\"post-body clearfix {% if content.post_list_summary_featured_image == false %}post_item_full{% endif %}\">\n                            <div class=\"post-blog-content\">\n                                <div class=\"blog--inner-space\">\n                                    <div class=\"post-header\">\n                                        <h4><a href=\"{{content.absolute_url}}\">{{ content.name }}</a></h4>\n                                    </div>\n                                    <div class=\"blog--tag-author-coloumn\">\n                                         <div class=\"topic\">\n                                            {% if content.topic_list %}\n                                            <p id=\"hubspot-topic_data\">\n                                                {% for topic in content.topic_list %}\n                                                <i class=\"fa fa-tags\" aria-hidden=\"true\"></i>\n                                                <a class=\"topic-link\" href=\"{{ blog_tag_url(group.id, topic.slug) }}\">{{ topic.name }}</a>{% if not loop.last %},{% endif %}\n                                                {% endfor %}\n                                            </p>\n                                            {% endif %}\n                                        </div>\n                                        <div id=\"hubspot-author_data\" class=\"hubspot-editable\" data-hubspot-form-id=\"author_data\" data-hubspot-name=\"Blog Author\">\n                                            <div class=\"blog--author\">\n                                                {%if content.blog_post_author %}\n                                                <i class=\"fa fa-user\" aria-hidden=\"true\"></i><a class=\"author-link\" href=\"{{ blog_author_url(group.id, content.blog_post_author.slug) }}\">\n                                                    {{ content.blog_post_author.display_name }}</a>\n                                                {% endif %}\n                                            </div>\n                                        </div>\n                                       \n                                    </div>\n                                    <div class=\"blog_content_area\">\n                                        <p>{{ content.post_list_content|truncatehtml(120, '...', false)}}</p>\n                                        {% if content_group.show_summary_in_listing %}\n                                       <!-- <a class=\"more-link\" href=\"{{ content.absolute_url }}\">Read More</a>-->\n                                        {% endif %}\n                                    </div>\n                                </div>\n                            </div>\n                            {% if content.post_list_summary_featured_image %}\n                            <div class=\"blog_featured_img\">\n                                <div class=\"hs-featured-image-wrapper\">\n                                    <a href=\"{{content.absolute_url}}\" title=\"\" class=\"hs-featured-image-link\">\n                                        <img src=\"{{ content.post_list_summary_featured_image }}\" class=\"hs-featured-image\" alt=\"{{ content.featured_image_alt_text | escape }}\">\n                                    </a>\n                                </div>\n                            </div>\n                            {% endif %}\n                        </div>\n                        {% else %}\n                        <h4 class=\"post-listing-simple\"><a href=\"{{content.absolute_url}}\">{{ content.name }}</a></h4>\n                        {% endif %}\n                    </div>\n                    {% endfor %}\n                </div>\n                <div class=\"pagination wrapper flex-row space-between\">\n                    {% if not simple_list_page %}\n                    <div class=\"pages-navigation flex-row align-center\">\n                        {% if current_page_num > 1 %}\n                        {% set previous = current_page_num - 1 %}\n                        <a rel=\"nofollow\" href=\"{{ blog_page_link(previous) }}\">\n                            <span class=\"btn\"><i class=\"fa fa-angle-double-left\" aria-hidden=\"true\"></i></span>\n                        </a>\n                        {% endif %} {% if current_page_num %}\n                        <a href=\"{{ content.post_slug }}\" class=\"page-number btn current\">\n                            <span>{{ current_page_num }}</span>\n                        </a>\n                        {% endif %} {% if next_page_num %}\n                        <a href=\"{{ blog_page_link(next_page_num) }}\" class=\"page-number btn\">\n                            <span>{{next_page_num }}</span>\n                        </a>\n                        <a rel=\"nofollow\" href=\"{{ blog_page_link(next_page_num) }}\">\n                            <span class=\"btn\"><i class=\"fa fa-angle-double-right\" aria-hidden=\"true\"></i></span>\n                        </a>\n                        {% endif %}\n                    </div>\n                    {% endif %}\n                </div>\n            </div>\n        </div>\n    </div>\n</div>",
+                          "blog_post_source" : "<div class=\"blog-section blog-detail--clear\">\n    <div class=\"blog-post-wrapper cell-wrapper\">\n        <div class=\"blog-section\">\n            <div class=\"blog-post-wrapper cell-wrapper\">\n                <div class=\"section post-header\">\n                    <div class=\"blog_featured_img blog_detail\">\n                        {% if content.post_list_summary_featured_image %}\n                        <div class=\"hs-featured-image-wrapper\">\n                            <a href=\"{{content.absolute_url}}\" title=\"\" class=\"hs-featured-image-link\">\n                                <img src=\"{{ content.post_list_summary_featured_image }}\" class=\"hs-featured-image\" alt=\"{{ content.featured_image_alt_text | escape }}\">\n                            </a>\n                        </div>\n                        {% endif %}\n                    </div>\n                    <h1>{{ content.name }}</h1>\n                    <div id=\"hubspot-author_data\" class=\"hubspot-editable\" data-hubspot-form-id=\"author_data\" data-hubspot-name=\"Blog Author\">\n                        \n                        {% if content.blog_post_author %}\n                        {% if content.blog_post_author.avatar %} <div class=\"hs-author-avatar\"> <img src=\"{{ content.blog_post_author.avatar }}\" alt=\"{{ content.blog_post_author.display_name }}\"> </div> {% endif %}\n                        <div class=\"posted-by--blog\">\n                        <span class=\"hs-author-label\">Posted by </span>\n                        <a class=\"author-link\" href=\"{{ blog_author_url(group.id, content.blog_post_author.slug) }}\">{{ content.blog_post_author.display_name }}</a> on {{ content.publish_date_localized }}\n                        </div>\n                        {% endif %}\n                    </div>\n                </div>\n                <div class=\"section post-body\">\n                    {{ content.post_body }}\n                </div>\n                {% if content.topic_list %}\n                <p id=\"hubspot-topic_data\"> Topics:\n                    {% for topic in content.topic_list %}\n                    <a class=\"topic-link\" href=\"{{ blog_tag_url(group.id, topic.slug) }}\">{{ topic.name }}</a>{% if not loop.last %},{% endif %}\n                    {% endfor %}\n                </p>\n                {% endif %}\n                {% blog_social_sharing \"blog_social_sharing\" overrideable=False, label='Blog Social Sharing' %}\n            </div>\n        </div>\n    </div>\n</div>",
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "path" : "@hubspot/blog_content",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "template_to_edit" : "post",
+                          "widget_name" : "Blog Content",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1568959858402101",
+                        "label" : "Module group",
+                        "type" : "cell",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : false,
+                          "per_widget_wrapper_html" : "",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_1567748041320211",
+                            "label" : "Heading And Subheading",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "comment-heading",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "heading" : "Leave Comment",
+                              "overrideable" : true,
+                              "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Custom Module/Heading And Subheading",
+                              "per_widget_wrapper_html" : "",
+                              "schema_version" : 2,
+                              "subheading" : "",
+                              "widget_name" : "Heading And Subheading",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "comment-heading",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        }, {
+                          "0" : {
+                            "x" : 0,
+                            "w" : 12,
+                            "name" : "module_151456961241174",
+                            "label" : "Blog Comments",
+                            "type" : "custom_widget",
+                            "params" : {
+                              "css_class" : "blog--comment",
+                              "css_id" : "",
+                              "css_id_str" : "",
+                              "css_style" : "",
+                              "overrideable" : false,
+                              "path" : "@hubspot/blog_comments",
+                              "per_widget_wrapper_html" : "",
+                              "schema_version" : 2,
+                              "widget_name" : "Blog Comments",
+                              "wrapping_html" : ""
+                            },
+                            "rows" : [ ],
+                            "rowMetaData" : [ ],
+                            "cells" : [ ],
+                            "cssId" : "",
+                            "cssClass" : "blog--comment",
+                            "cssStyle" : "",
+                            "styles" : null,
+                            "widgets" : [ ]
+                          }
+                        } ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  },
+                  "8" : {
+                    "x" : 8,
+                    "w" : 4,
+                    "name" : "module_151456959389571",
+                    "label" : "Module Group",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "clear--sidebar",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_164003006288751",
+                        "label" : "search_input custom",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "content_types" : {
+                            "landing_pages" : true
+                          },
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "overrideable" : true,
+                          "path" : "/search_input custom",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "search_input custom",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_156768118393552",
+                        "label" : "Post Filter",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "clear--sidebar-posts clear--post-topic",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "list_title" : "CATEGORIES",
+                          "order_by" : "post_count",
+                          "overrideable" : false,
+                          "path" : "@hubspot/post_filter",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "select_blog" : 49482695213,
+                          "widget_name" : "Post Filter",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "clear--sidebar-posts clear--post-topic",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1624929102030492",
+                        "label" : "Form",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "form" : {
+                            "form_id" : "9d4478b2-abcd-4910-88e2-688575a5c425",
+                            "form_type" : "HUBSPOT",
+                            "message" : "Gracias por enviar el formulario.",
+                            "response_type" : "inline"
+                          },
+                          "overrideable" : true,
+                          "path" : "@hubspot/form",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "title" : "SUSCRIBE",
+                          "widget_name" : "Form",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    }, {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_1574760729397134",
+                        "label" : "RSS Listing",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "content_group_id" : 49482695213,
+                          "css_class" : "clear--sidebar-posts",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "padding-top:10%;",
+                          "include_featured_image" : false,
+                          "overrideable" : true,
+                          "path" : "@hubspot/rss_listing",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "show_author" : false,
+                          "show_date" : false,
+                          "show_detail" : false,
+                          "title" : "RECENT POSTS",
+                          "widget_name" : "RSS Listing",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "clear--sidebar-posts",
+                        "cssStyle" : "padding-top:10%;",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "clear--sidebar",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "container",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "clear-blog-listing",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1628634579789369",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "video-spacing",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1628635680572770",
+            "label" : "Grupo de módulos",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "videos",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 4,
+                "name" : "module_1628635680571769",
+                "label" : "Rich Text",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<div class=\"hs-responsive-embed-wrapper hs-responsive-embed\" style=\"width: 100%; height: auto; position: relative; overflow: hidden; padding: 0; max-width: 560px; max-height: 315px; min-width: 256px; margin: 0px auto; display: block;\">\n<div class=\"hs-responsive-embed-inner-wrapper\" style=\"position: relative; overflow: hidden; max-width: 100%; padding-bottom: 56.25%; margin: 0;\"><iframe class=\"hs-responsive-embed-iframe\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" xml=\"lang\" src=\"https://www.youtube.com/embed/D1fCI8hL0EA\" width=\"560\" height=\"315\" data-service=\"youtube\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div>\n</div>",
+                  "overrideable" : true,
+                  "path" : "@hubspot/rich_text",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Rich Text",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "4" : {
+                "x" : 4,
+                "w" : 4,
+                "name" : "module_1628635886461913",
+                "label" : "Rich Text",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<div class=\"hs-responsive-embed-wrapper hs-responsive-embed\" style=\"width: 100%; height: auto; position: relative; overflow: hidden; padding: 0; max-width: 560px; max-height: 315px; min-width: 256px; margin: 0px auto; display: block;\">\n<div class=\"hs-responsive-embed-inner-wrapper\" style=\"position: relative; overflow: hidden; max-width: 100%; padding-bottom: 56.25%; margin: 0;\"><iframe class=\"hs-responsive-embed-iframe\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" xml=\"lang\" src=\"https://www.youtube.com/embed/rzawKArDjIM\" width=\"560\" height=\"315\" data-service=\"youtube\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div>\n</div>",
+                  "overrideable" : true,
+                  "path" : "@hubspot/rich_text",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Rich Text",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 4,
+                "name" : "module_1628635883841905",
+                "label" : "Rich Text",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<div class=\"hs-responsive-embed-wrapper hs-responsive-embed\" style=\"width: 100%; height: auto; position: relative; overflow: hidden; padding: 0; max-width: 560px; max-height: 315px; min-width: 256px; margin: 0px auto; display: block;\">\n<div class=\"hs-responsive-embed-inner-wrapper\" style=\"position: relative; overflow: hidden; max-width: 100%; padding-bottom: 56.25%; margin: 0;\"><iframe class=\"hs-responsive-embed-iframe\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" xml=\"lang\" src=\"https://www.youtube.com/embed/SsI9Ptu9b4s\" width=\"560\" height=\"315\" data-service=\"youtube\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div>\n</div>",
+                  "overrideable" : true,
+                  "path" : "@hubspot/rich_text",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Rich Text",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "videos",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "video-spacing",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_163347259050886",
+        "label" : "Footer - 2021",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "men_1" : [ {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/procedures/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "FACE"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/procedures/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "BODY"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/procedures/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "BREAST"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/procedures/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "NON-SURGICAL"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/procedures/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "MEDSPA"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/procedures/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "MEN"
+          } ],
+          "men_2" : [ {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/about/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "ABOUT"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/before-and-after-photos/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "GALLERY"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.cosmeticafl.com/faq/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "FAQs"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://blog.cosmeticafl.com/blog",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "BLOG"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://procedures.cosmeticafl.com/our-safety-program",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "SAFETY"
+          }, {
+            "link_field" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://cosmetica.bemorr.com/our-safety-program/",
+                "type" : "EXTERNAL"
+              }
+            },
+            "text_field" : "PROGRAM"
+          } ],
+          "overrideable" : true,
+          "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Custom Module/Footer - 2021",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Footer - 2021",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

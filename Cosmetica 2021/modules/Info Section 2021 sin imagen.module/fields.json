@@ -1,0 +1,104 @@
+[ {
+  "id" : "fc41e78e-9d74-2b1b-32ba-78d867ae518a",
+  "name" : "mostrar_video",
+  "display_width" : null,
+  "label" : "Mostrar video",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "5cdd4f80-b633-6713-0b44-76a21aa7a50d",
+  "name" : "n_mero_de_bloque",
+  "display_width" : null,
+  "label" : "Número de bloque",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "c05c5018-c03e-6420-9023-57fd33a07640",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "How does the Eye lift Surgery (Blephorplasty) works?"
+}, {
+  "id" : "deaf2a52-e6d3-a19d-4c26-51b6c97b581d",
+  "name" : "mostrar_imagen",
+  "display_width" : null,
+  "label" : "mostrar imagen",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "c0f16c08-a139-c5b9-3801-870d394a7bf2",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/product-faq-img.png",
+    "alt" : "product-faq-img",
+    "loading" : "lazy",
+    "width" : 250,
+    "height" : 250,
+    "max_width" : 250,
+    "max_height" : 250
+  }
+}, {
+  "id" : "bf9ac14e-994b-22fa-69e6-48685ed10de5",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Texto enriquecido",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p style=\"font-size: 18px;\">Our eyes convey our emotions, expressions, well being, and can reflect how we are portrayed by others around us. Over time, the skin around our eyes can start to lose its laxity, causing wrinkles, bags, puffiness, and droopy eyelids to appear. The eyes are often seen as the most important feature of the face, and this occurrence can cause many to feel self-conscious about their facial appearance. In response to aging eyes, Cosmetica Plastic Surgery &amp; Anti-Aging provides the Eyelid Lift Surgery, clinically known as Blepharoplasty, to tighten our patient’s eyelids. This minimally invasive procedure can treat conditions including droopy eyelids, bags under the eyes, puffy upper and lower eyelids, as well as excess skin and fine wrinkles.</p>"
+}, {
+  "id" : "844432f5-7189-e349-caee-b5fa005f3477",
+  "name" : "video",
+  "display_width" : null,
+  "label" : "Video",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer"
+}, {
+  "id" : "402f5b38-bc96-d67b-236e-9df419da5942",
+  "name" : "video_youtube",
+  "display_width" : null,
+  "label" : "Video YouTube",
+  "required" : false,
+  "locked" : false,
+  "supported_source_types" : [ "oembed", "html" ],
+  "supported_oembed_types" : [ "photo", "video", "link", "rich" ],
+  "resizable" : true,
+  "show_preview" : true,
+  "supported_media_bridge_providers" : [ ],
+  "type" : "embed",
+  "default" : {
+    "source_type" : "html",
+    "oembed_url" : "",
+    "oembed_response" : { },
+    "size_type" : "auto",
+    "embed_html" : "<iframe width=\"1920\" height=\"937\" src=\"https://www.youtube.com/embed/ScMzIvxBSi4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+  }
+} ]

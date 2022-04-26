@@ -1,0 +1,396 @@
+[ {
+  "id" : "34acd9d4-7429-c3e9-6005-08b94a00a0f0",
+  "name" : "n_mero_de_bloque",
+  "display_width" : null,
+  "label" : "Número de bloque",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "d81de7b8-8582-5998-068a-a480805c27f4",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CATEGORIES"
+}, {
+  "id" : "cbc2c5c6-8145-6fdd-ea22-8e6c3cdeb3a1",
+  "name" : "enlaces",
+  "display_width" : null,
+  "label" : "Enlaces",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5f6441a0-f03d-f9e8-3aa9-9f6f23e149b2",
+    "name" : "enlace_face",
+    "display_width" : null,
+    "label" : "Enlace Face",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "1e63f2a9-435b-d3d0-8061-479258bd5e0e",
+    "name" : "enlace_breast",
+    "display_width" : null,
+    "label" : "Enlace Breast",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "faa98463-4ba3-c78c-3468-08b9a61da3f5",
+    "name" : "enlace_body",
+    "display_width" : null,
+    "label" : "Enlace Body",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "d08bcf20-1583-7900-6f2d-7928eb1e0ef7",
+    "name" : "enlace_non_surgical",
+    "display_width" : null,
+    "label" : "Enlace Non-Surgical",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "0ba8b503-b4f2-c423-9ba5-5ea9d5a03e3d",
+    "name" : "enlace_medispa",
+    "display_width" : null,
+    "label" : "Enlace Medispa",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "bcb7deb6-c15b-d3df-fe6b-e326bdc3e18b",
+    "name" : "enlace_mens",
+    "display_width" : null,
+    "label" : "Enlace Mens",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enlace_face" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "enlace_breast" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "enlace_body" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "enlace_non_surgical" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "enlace_medispa" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "enlace_mens" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "13b87a6e-95f4-4f22-32ba-e92511b2dd57",
+  "name" : "grupo_de_notas",
+  "display_width" : null,
+  "label" : "Grupo de notas",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "15358642-30d1-3b02-48fa-1081207082fc",
+    "name" : "imagen_nota",
+    "display_width" : null,
+    "label" : "Imagen Nota",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/header.jpg",
+      "alt" : "header",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 689,
+      "max_width" : 1920,
+      "max_height" : 689
+    }
+  }, {
+    "id" : "f66d0ab2-3573-8dd2-a31e-b1c0cc4fef43",
+    "name" : "t_tulo_nota",
+    "display_width" : null,
+    "label" : "Título Nota",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Title"
+  }, {
+    "id" : "c3931664-1fed-3ec9-32a3-076f3a6629d2",
+    "name" : "contenido_nota",
+    "display_width" : null,
+    "label" : "Contenido Nota",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  }, {
+    "id" : "97727bb0-b4b0-8c28-cc86-b370c309c325",
+    "name" : "enlace_nota",
+    "display_width" : null,
+    "label" : "Enlace Nota",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "imagen_nota" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/header.jpg",
+      "alt" : "header",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 689,
+      "max_width" : 1920,
+      "max_height" : 689
+    },
+    "t_tulo_nota" : "Title",
+    "contenido_nota" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "enlace_nota" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "imagen_nota" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/header.jpg",
+      "alt" : "header",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 689,
+      "max_width" : 1920,
+      "max_height" : 689
+    },
+    "t_tulo_nota" : "Title",
+    "contenido_nota" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "enlace_nota" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "imagen_nota" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/header.jpg",
+      "alt" : "header",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 689,
+      "max_width" : 1920,
+      "max_height" : 689
+    },
+    "t_tulo_nota" : "Title",
+    "contenido_nota" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "enlace_nota" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "imagen_nota" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/header.jpg",
+      "alt" : "header",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 689,
+      "max_width" : 1920,
+      "max_height" : 689
+    },
+    "t_tulo_nota" : "Title",
+    "contenido_nota" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "enlace_nota" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "imagen_nota" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/header.jpg",
+      "alt" : "header",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 689,
+      "max_width" : 1920,
+      "max_height" : 689
+    },
+    "t_tulo_nota" : "Title",
+    "contenido_nota" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "enlace_nota" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

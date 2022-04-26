@@ -1,0 +1,232 @@
+[ {
+  "id" : "e0f88f8a-986b-9154-5a4e-952e5d96f28a",
+  "name" : "men_1",
+  "display_width" : null,
+  "label" : "Menú 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0473993c-acad-22ec-0e35-5267566ed908",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Enlace",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "77a81a63-0742-1f30-6445-bced48b55a8a",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "9f468217-2480-aacf-372f-585653e073bd",
+  "name" : "men_2",
+  "display_width" : null,
+  "label" : "Menú 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a442504c-65f7-9a94-e0e7-c85a9140273f",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Enlace",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "df018a47-125d-0e7c-1abe-e33aebf96bac",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "220014cf-312f-e0ac-7939-bcbdc5579a72",
+  "name" : "enlace_privacy",
+  "display_width" : null,
+  "label" : "Enlace Privacy",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/lp-fue-hair-transplant-s2020-services-cosmetica?hs_preview=CBuNeBFn-50365656952",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "e45e77a2-dafc-5f75-69ff-059dc66f70c4",
+  "name" : "enlace_terms",
+  "display_width" : null,
+  "label" : "Enlace Terms",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/lp-fue-hair-transplant-s2020-services-cosmetica?hs_preview=CBuNeBFn-50365656952",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "53821256-cca8-5506-cf9b-f287d5838211",
+  "name" : "texto_privacy",
+  "display_width" : null,
+  "label" : "Texto Privacy",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "6c57e72a-1abc-7be9-a7af-ef22f1f66bdf",
+  "name" : "texto_terms",
+  "display_width" : null,
+  "label" : "texto_terms",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Terms & Conditions"
+}, {
+  "id" : "489de168-25d6-1b25-99a2-b1ec238c85d0",
+  "name" : "enlace_facebook",
+  "display_width" : null,
+  "label" : "Enlace Facebook",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/Cosmeticafl",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "6aa3c7df-4c35-5e10-7379-04c7576a26bd",
+  "name" : "enlace_youtube",
+  "display_width" : null,
+  "label" : "Enlace Youtube",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.youtube.com/channel/UCFgCW7vP9JzaPMbmVjhbK-Q",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "b7ecfb75-da12-bea3-0640-ba103b74c31d",
+  "name" : "enlace_instagram",
+  "display_width" : null,
+  "label" : "enlace_instagram",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.instagram.com/adleyda.silva/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "2ceba963-dc12-9f73-feed-508f6b788426",
+  "name" : "texto_derechos_reservados",
+  "display_width" : null,
+  "label" : "Texto Derechos Reservados",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p style=\"text-align: center;\">Copyright © 2021 | Cosmetica Plastic Surgery &amp; Anti-Aging. All Rights Reserved. Individual results may vary.<br>Designed by Cosmetica Plastic Surgery &amp; Anti-Aging</p>"
+} ]

@@ -1,0 +1,68 @@
+[ {
+  "id" : "ef5cb0cd-748f-8f1e-5852-fe98f3878fcc",
+  "name" : "n_mero_de_bloque",
+  "display_width" : null,
+  "label" : "Número de bloque",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "504bc37b-bd7f-47da-e2f4-c3c0ad4cb278",
+  "name" : "lista_de_preguntas",
+  "display_width" : null,
+  "label" : "Lista de preguntas",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "5960d3b8-51c6-a094-49d1-9b44d05cd469",
+    "name" : "pregunta",
+    "display_width" : null,
+    "label" : "Pregunta",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "How much it cost?"
+  }, {
+    "id" : "ae999eed-d5ba-0623-7fee-09dd44a2e724",
+    "name" : "respuesta",
+    "display_width" : null,
+    "label" : "Respuesta",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis.</p>\n<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis. Sapien nisi suspendisse vehicula venenatis lacus vitae ac fermentum, convallis sem ante molestie cum mollis nunc. Quam enim dui rhoncus nibh iaculis mollis sed volutpat praesent, accumsan tristique sapien feugiat molestie velit suscipit ac, euismod vehicula dapibus netus cum sagittis pulvinar primis.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "pregunta" : "How much it cost?",
+    "respuesta" : "<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis.</p>\n<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis. Sapien nisi suspendisse vehicula venenatis lacus vitae ac fermentum, convallis sem ante molestie cum mollis nunc. Quam enim dui rhoncus nibh iaculis mollis sed volutpat praesent, accumsan tristique sapien feugiat molestie velit suscipit ac, euismod vehicula dapibus netus cum sagittis pulvinar primis.</p>"
+  }, {
+    "pregunta" : "How much it cost?",
+    "respuesta" : "<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis.</p>\n<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis. Sapien nisi suspendisse vehicula venenatis lacus vitae ac fermentum, convallis sem ante molestie cum mollis nunc. Quam enim dui rhoncus nibh iaculis mollis sed volutpat praesent, accumsan tristique sapien feugiat molestie velit suscipit ac, euismod vehicula dapibus netus cum sagittis pulvinar primis.</p>"
+  }, {
+    "pregunta" : "How much it cost?",
+    "respuesta" : "<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis.</p>\n<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis. Sapien nisi suspendisse vehicula venenatis lacus vitae ac fermentum, convallis sem ante molestie cum mollis nunc. Quam enim dui rhoncus nibh iaculis mollis sed volutpat praesent, accumsan tristique sapien feugiat molestie velit suscipit ac, euismod vehicula dapibus netus cum sagittis pulvinar primis.</p>"
+  }, {
+    "pregunta" : "How much it cost?",
+    "respuesta" : "<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis.</p>\n<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis. Sapien nisi suspendisse vehicula venenatis lacus vitae ac fermentum, convallis sem ante molestie cum mollis nunc. Quam enim dui rhoncus nibh iaculis mollis sed volutpat praesent, accumsan tristique sapien feugiat molestie velit suscipit ac, euismod vehicula dapibus netus cum sagittis pulvinar primis.</p>"
+  }, {
+    "pregunta" : "How much it cost?",
+    "respuesta" : "<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis.</p>\n<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis. Sapien nisi suspendisse vehicula venenatis lacus vitae ac fermentum, convallis sem ante molestie cum mollis nunc. Quam enim dui rhoncus nibh iaculis mollis sed volutpat praesent, accumsan tristique sapien feugiat molestie velit suscipit ac, euismod vehicula dapibus netus cum sagittis pulvinar primis.</p>"
+  }, {
+    "pregunta" : "How much it cost?",
+    "respuesta" : "<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis.</p>\n<p style=\"font-size: 16px;\">Lorem ipsum dolor sit amet consectetur adipiscing elit tellus mus nec, eleifend semper tempor pretium quisque auctor ultrices aenean mattis ad pulvinar, nunc posuere natoque dictumst curabitur feugiat eget vehicula venenatis. Sapien nisi suspendisse vehicula venenatis lacus vitae ac fermentum, convallis sem ante molestie cum mollis nunc. Quam enim dui rhoncus nibh iaculis mollis sed volutpat praesent, accumsan tristique sapien feugiat molestie velit suscipit ac, euismod vehicula dapibus netus cum sagittis pulvinar primis.</p>"
+  } ]
+} ]

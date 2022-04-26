@@ -1,0 +1,338 @@
+<style>
+  #footer .pad-footer-cont {
+  padding: 60px 0 50px
+}
+#footer .container {
+    width: 100%;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+#footer .item-l{
+  flex: 0 0 48.5%;
+  max-width:48.5%;
+}
+#footer .item-s{
+  flex: 0 0 14.1667%;
+  max-width:14.1667%;
+}
+#footer .logo-footer {
+  max-width: 278px;
+  margin-bottom:30px;
+}
+#footer .desc-text {
+  font-size:17px;
+  color:#fff;
+}
+#footer .footer-contact {
+  margin-bottom: 0;
+}
+#footer .footer-contact li{
+  color:#fff;
+  margin-bottom:12px;
+}
+#footer .footer-contact li a{
+  color:#fff;
+  font-weight:400;
+  font-size:16px;
+  
+}
+#footer .footer-contact li a:hover{
+  text-decoration:none;
+}
+#footer .footer-contact li i{
+  margin-right:10px;
+}
+#footer .bck-black {
+  background-color:#0A0909;
+  padding:25px 0;
+}
+#footer .social-icons{
+ display: inline-block;
+  text-align:center;
+}
+#footer .social-icons a{
+  text-decoration:none;
+}
+#footer .fab {
+  color: #fff;
+  margin-right: 8px;
+  font-size: 21px;
+}
+#footer .fab:hover {
+  color: #4bc1cf;
+  text-decoration:none;
+  transition: ease 0.3s;
+}
+footer{
+  background: #595758;
+}
+
+footer h5{
+  color: #4bc1cf;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer a{
+  color: #858585;
+  font-family: Open Sans,Arial,sans-serif!important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+
+footer .btn-footer{
+  background: #4bc1cf;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: auto;
+  line-height: 36px;
+  max-width: 240px;
+  padding: 0 10px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+footer .btn-footer i {
+    margin: 10px 8px 0;
+}
+
+.copyright-txt{
+  color: #BBBBBB;
+  margin-top: 40px;
+}
+
+.copyright-txt p{
+  color: #BBBBBB;
+}
+
+footer .second-list{
+  margin-top: 30px;
+}
+
+footer div a:hover{
+  color: #FFFFFF;
+}
+#footer .bck-black a{
+  color:#4aaccf;
+} 
+#footer .bck-black a:hover{
+  text-decoration:none;
+} 
+@media(max-width:767px) {
+  #footer .item-l{
+  flex: 0 0 100%;
+  max-width:100%;
+  padding: 0 15px;
+}
+#footer .item-s{
+  flex: 0 0 100%;
+  max-width:100%;
+  padding: 0 15px;
+}
+  #footer .footer-contact {
+    margin-bottom: 30px;
+  }
+  #footer .logo-footer {
+    max-width: 240px;
+    display:block;
+    margin: 0 auto 15px;
+  }
+  #footer .ta-mob {
+    text-align:center;
+  }
+}
+</style>
+<footer id="footer">
+  <div class="container pad-footer-cont">
+    <div class="row">
+      <div class="item-l">
+        <img src="https://procedures.cosmeticafl.com/hubfs/Cosmetica%202021/cosmetica-plastic-surgery-light-blue-logo-300.png" alt="Cosmetica" class="logo-footer" loading="lazy" width="258" height="57" />
+        {% inline_rich_text field="description" value="{{ module.description }}" %}
+      </div>
+      <div class="item-s d-flex flex-column mb-3  ta-mob">
+        <h5 class="mb-2">
+          PROCEDURES
+        </h5>
+        <ul class="mb-3">
+          {% for item in module.men_1 %}
+          <li>
+            {% set href = item.link_field.url.href %}
+            {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            {% set rel = [] %}
+            {% if item.link_field.no_follow %}
+            {% do rel.append("nofollow") %}
+            {% endif %}
+            {% if item.link_field.open_in_new_tab %}
+            {% do rel.append("noopener") %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+               {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+               >
+              {{ item.text_field }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% set href = module.enlace_privacy.url.href %}
+        {% if module.enlace_privacy.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.enlace_privacy.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.enlace_privacy.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+      {#  <div>
+          <a href="{{ href }}"
+             {% if module.enlace_privacy.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+            {{ module.texto_privacy }}
+          </a>
+        </div> #}
+      </div>
+      <div class="item-s d-flex flex-column mb-3  ta-mob">
+        <h5 class="mb-2">
+          QUICK LINKS
+        </h5>
+        <ul class="mb-3">
+          {% for item in module.men_2 %}
+          <li>
+            {% set href = item.link_field.url.href %}
+            {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            {% set rel = [] %}
+            {% if item.link_field.no_follow %}
+            {% do rel.append("nofollow") %}
+            {% endif %}
+            {% if item.link_field.open_in_new_tab %}
+            {% do rel.append("noopener") %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+               {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+               >
+              {{ item.text_field }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% set href = module.enlace_terms.url.href %}
+        {% if module.enlace_terms.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.enlace_terms.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.enlace_terms.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        {# <div>
+          <a href="{{ href }}"
+             {% if module.enlace_terms.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+            {{ module.texto_terms }}
+          </a>
+        </div> #}
+      </div>
+      <div class="item-s ta-mob social-icons">
+        
+                 {% set href = module.enlace_youtube.url.href %}
+                {% if module.enlace_youtube.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if module.enlace_youtube.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if module.enlace_youtube.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.enlace_youtube.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   class=" mb-3">
+                  <i class="fab fa-youtube"></i>
+                </a>
+     
+          
+                {% set href = module.enlace_facebook.url.href %}
+                {% if module.enlace_facebook.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if module.enlace_facebook.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if module.enlace_facebook.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.enlace_facebook.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   class="mb-3"><i class="fab fa-facebook-f"></i>
+                  
+                </a>
+              
+                {% set href = module.enlace_twitter.url.href %}
+                {% if module.enlace_twitter.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if module.enlace_twitter.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if module.enlace_twitter.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.enlace_twitter.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   class=" mb-3">
+                  <i class="fab fa-twitter"></i>
+                </a>
+       
+                {% set href = module.enlace_instagram.url.href %}
+                {% if module.enlace_instagram.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if module.enlace_instagram.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if module.enlace_instagram.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.enlace_instagram.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   class=" mb-3">
+                  <i class="fab fa-instagram"></i>
+                </a>   
+      </div>
+    </div> 
+  </div>
+  <div class="bck-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {{ module.footer_derechos_reservados }}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

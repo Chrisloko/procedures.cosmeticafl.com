@@ -1,0 +1,57 @@
+<style>
+#index-section{
+ 
+}
+#index-section ul{
+  list-style:none;
+  padding-left: 0px;
+  margin-bottom: 0;
+}
+#index-section ul li{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  color:  #666;
+  border-left: solid 3px transparent;
+  font-weight:600;
+}
+#index-section ul li:hover{
+  border-left: solid 3px #01487c;
+  
+}
+#index-section ul li:hover a{
+  color:#01487c;
+  
+}
+#index-section ul li a{ 
+  color:#666;
+  text-transform:uppercase;
+  font-size: 20px;
+}
+#index-section ul li a:hover{ 
+  color:#01487c;
+  text-decoration:none;
+}
+#index-section h2{
+  padding-bottom:30px;
+}
+#index-section{
+
+}
+</style>
+<section id="index-section" class="upper-lower-section" style="padding:{{module.padding_section}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"> 
+        <h2>
+          {{ module.titulo }}
+        </h2>
+        <ul>
+          {% for item in module.index %}
+            <li><a href="{{item.ancla.url.href}}">{{item.texto}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

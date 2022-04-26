@@ -1,0 +1,226 @@
+<div class="{{ name }}">
+    <div class="hubdew_templateheader main_head">
+        <div class="header">
+            <div class="container">
+                <div class="head_main">
+                    <div class="logo {% if module.logo_setting.logo_option.overhide_logo =='default'%} default{% endif%} {% if module.logo_setting.logo_option.overhide_logo =='upload'%} upload{% endif%}" style="width: {{ module.logo_setting.logo_option.logo_size }}px;">
+                        <a href="{{ module.logo_setting.logo_option.link }}">
+                            <div class="upload_logo">
+                                {% if module.logo_setting.logo_option.logo_images.src %}
+                                <img src="{{ module.logo_setting.logo_option.logo_images.src }}" alt="{{ module.logo_setting.logo_option.logo_images.alt }}" width="{{ module.logo_setting.logo_option.logo_images.width }}" height="{{ module.logo_setting.logo_option.logo_images.height }}">
+                                {% endif %}
+                            </div>
+                        </a>
+                        <div class="sticky-logo">
+                            <a href="{{ module.logo_setting.logo_option.link }}"> {% if module.logo_setting.logo_option.sticky_logo_img.src %}
+                                {% set sizeAttrs = 'width="{{ module.logo_setting.logo_option.sticky_logo_img.width }}" height="{{ module.logo_setting.logo_option.sticky_logo_img.height }}"' %}
+                                {% if module.logo_setting.logo_option.sticky_logo_img.size_type == 'auto' %}
+                                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                                {% elif module.logo_setting.logo_option.sticky_logo_img.size_type == 'auto_custom_max' %}
+                                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.logo_setting.logo_option.sticky_logo_img.max_width }}px; max-height: {{ module.logo_setting.logo_option.sticky_logo_img.max_height }}px"' %}
+                                {% endif %}
+                                <img src="{{ module.logo_setting.logo_option.sticky_logo_img.src }}" alt="{{ module.logo_setting.logo_option.sticky_logo_img.alt }}" {{ sizeAttrs }}>
+                                {% endif %}</a>
+                        </div>
+                    </div>
+                    <!--     <div id="Dew-menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
+                    <div class="right_sidebar">
+                        <div class="nav custom-menu-primary">
+                            <div id="menu-toggle">
+                                <div id="menu-icon">
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            {% menu id="{{ module.navigation.menu }}" %}
+                        </div>
+                        <div class="menu-search-icon">
+                            {% if module.do_you_want_search_icon_ %}
+                            <a href="javascript:void(0)">{{ module.icon }}</a>
+                            {% endif %}
+                        </div>
+                        {% if module.do_you_want_button %}
+                        <div class="button_top_h">
+                          {% set href = module.button_style.button_link.url.href %}<a href="{{ href }}"  {% if module.button_style.button_link.open_in_new_tab %}target="_blank"{% endif %}{% if module.button_style.button_link.no_follow %}rel="nofollow"{% endif %}>{{ module.button_style.button_text }}</a>
+                         </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# =============== CSS Styling =============== #}
+{% require_css %}
+<style>
+.{{ name }} .button_top_h{
+    float: right;
+    margin-top: 10px;
+        margin-left: 10px;
+}
+.header-container-wrapper.Stickyheader .button_top_h {
+    margin-top: 0;
+}
+
+.{{ name }} .button_top_h a{
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+    padding: {{ module.button_style.last_child_setting.padding_top_bottom }}px 15px;
+    font-size: {{ module.button_style.last_child_setting.font_size }}px;
+    line-height: 15px;
+    display: inline-block;
+    color: {{ module.button_style.last_child_setting.last_child_color.color }};
+    background-color: {{ module.button_style.last_child_setting.background_color.color }};
+}
+.{{ name }} .button_top_h a:hover{
+   color: {{ module.button_style.last_child_setting.hover_color.color }};
+    background-color: {{ module.button_style.last_child_setting.hover_background_.color }};
+}
+{% if module.header_width =='Standard_Width'%}
+   .{{ name }} .header .container{}
+
+   {% elif module.header_width =='custom_width'%}
+   .{{ name }} .header .container{ max-width: {{ module.custom_width }}px!important; }
+
+   {% elif module.header_width =='full_width'%}
+   .{{ name }} .header .container{ max-width: 95% !important; }
+   @media screen and (max-width: 992px){
+    .{{ name }} .header .nav .hs-menu-wrapper >ul {  
+     top: 75px;
+   }
+   }
+   @media screen and (max-width: 800px){
+   .{{ name }}  .header .container {
+       position: static;
+    }
+  
+}
+
+
+{% endif %}
+
+
+  {# Gradient BG #}
+  {% if module.header_setting.header_background_option.atomic_header_color_option == 'gradient' %}
+  .{{ name }} .header{
+    background: {{ module.header_setting.header_background_option.first_color.color }}; 
+    background: -moz-linear-gradient(-45deg, {{ module.header_setting.header_background_option.first_color.color }} 0%, {{ module.header_setting.header_background_option.second_color.color }} 100%); 
+    background: -webkit-linear-gradient(-45deg, {{ module.header_setting.header_background_option.first_color.color }} 0%,{{ module.header_setting.header_background_option.second_color.color }} 100%); 
+    background: linear-gradient(135deg, {{ module.header_setting.header_background_option.first_color.color }} 0%,{{ module.header_setting.header_background_option.second_color.color }} 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{{module.header_setting.header_background_option.first_color.color }}', endColorstr='{{ module.header_setting.header_background_option.second_color.color }}',GradientType=1 );
+      }
+  {% endif %}
+
+
+  .{{ name }} .nav ul>li>a {
+    color: {{ module.navigation.font.color.color }};
+    font-size: {{ module.navigation.font.font_size }}px;
+    line-height: {{ module.navigation.font.line_height }}px;
+    font-weight: {{ module.navigation.font.font_Weight }};
+    text-transform: {{ module.navigation.font.text_transform }};
+  }
+  .Stickyheader .nav ul>li>a{
+    color: {{ module.navigation.font.sticky_menu_hover_color.color }} !important;
+  }
+  .{{ name }} .nav ul li>a:hover {
+    color: {{ module.navigation.font.hover_color.color }} !important;
+  }
+
+  {% if module.header_setting.header_background_option.header_width %}
+  .{{ name }} .container{
+    max-width: {{ module.header_setting.header_background_option.container_size }}px;
+  }
+  {% endif %}
+
+  .{{name}} .logo.default .upload_logo{
+    display: none;
+  }
+  .{{name}} .logo.upload .custom_logo{
+    display: none;
+  }
+
+  .{{name}} .header .nav .hs-menu-wrapper ul ul li a {
+    background: {{ module.navigation.dropdown_menu.drop_down_background.color }};
+    color:{{ module.navigation.dropdown_menu.submenu_color.color }} !important;
+  }
+
+  .{{name}} .header .nav .hs-menu-wrapper ul ul li:hover > a, 
+  .{{name}} .header .nav .hs-menu-wrapper ul ul li.active > a, 
+  .{{name}} .header .nav .hs-menu-wrapper ul ul li.active-branch > a {
+    background: {{ module.navigation.dropdown_menu.sub_menu_background_color.color }};
+    color: {{ module.navigation.dropdown_menu.submenu_hover_color.color }} !important;
+  }
+
+  .{{name}} .header .nav .hs-menu-wrapper > ul > li > ul > li:first-child:hover:before, 
+  .{{name}} .header .nav .hs-menu-wrapper > ul > li > ul > li.active:first-child:before, 
+  .{{name}} .header .nav .hs-menu-wrapper > ul > li > ul > li.active-branch:first-child:before {
+    background: {{ module.navigation.dropdown_menu.drop_down_background.color }};
+  }
+  .{{name}} .header .nav .hs-menu-wrapper > ul > li > ul > li:first-child:before{  
+    background:  {{ module.navigation.dropdown_menu.drop_down_background.color }}; 
+  }
+  .{{name}} .header .nav .hs-menu-wrapper ul ul ul li:first-child:before{
+    background:#fff; 
+  }
+
+  @media screen and (max-width: 991px) {
+.{{ name }} .nav ul>li>a {
+      color: {{ module.navigation.dropdown_menu.mobile_menu_color.color }};
+ }
+.Stickyheader .nav ul>li>a{
+     color: {{ module.navigation.font.sticky_menu_color.color }} !important;
+}
+.{{ name }} .button_top_h {
+    margin-top: 7px;
+}
+.right_sidebar {  padding-right: 55px;}
+#menu-toggle,
+#menu-toggle_lan {
+    position: absolute;
+    right: 15px;
+    top:0;
+}
+.header-container-wrapper.Stickyheader .right_sidebar {
+    padding-right: 42px;
+}
+
+}
+  @media screen and (max-width: 480px){
+.hubdew_templateheader.main_head .header .head_main .logo {
+    width: 100px !important;
+}
+}
+
+  @media screen and (max-width: 400px){
+.right_sidebar {
+    padding-right: 38px;
+}
+.{{ name }} .button_top_h {
+    margin-top: 0px;
+}
+}
+</style>
+{% end_require_css %}
+
+{% require_js %}
+<script>
+   
+  $("<span class='expand-level'></span>").insertAfter(".hs-menu-wrapper.active-branch > ul li.hs-item-has-children > a");
+  
+  {% if module.do_you_want_first_menu_horizontal %}
+  $('.hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-menu-depth-1:first-child').addClass('clear-menu_horizontal_dropdown');
+  {% endif %}
+  // jQuery(function(){  
+  //     jQuery('.hs-menu-wrapper.active-branch > ul > li.hs-item-has-children > span').on('click',function(){ 
+  //     jQuery('.hs-menu-wrapper.active-branch > ul > li.hs-item-has-children  ul').toggleClass('active');
+  //     jQuery('.hs-menu-wrapper.active-branch > ul > li.hs-item-has-children > span').toggleClass('active');
+  //   }); 
+  // });
+
+
+  //$(this).closest('.row')
+
+</script>
+{% end_require_js %}

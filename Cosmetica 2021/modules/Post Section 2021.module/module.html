@@ -1,0 +1,47 @@
+<section id="block-{{ module.n_mero_de_bloque }}" class="posts-section my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <h3>{{ module.title }}</h3>
+        <ul class="cat-list">
+          <li>
+            <a href="{{module.enlaces.enlace_face.url.href}}">Face</a>
+          </li>
+          <li>
+            <a href="{{module.enlaces.enlace_breast.url.href}}">Breast</a>
+          </li>
+          <li>
+            <a href="{{module.enlaces.enlace_body.url.href}}">Body</a>
+          </li>
+          <li>
+            <a href="{{module.enlaces.enlace_non_surgical.url.href}}">Non-surgical</a>
+          </li>
+          <li>
+            <a href="{{module.enlaces.enlace_medispa.url.href}}">Medispa</a>
+          </li>
+          <li>
+            <a href="{{module.enlaces.enlace_mens.url.href}}">Men's</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="container mt-5 pt-5 notes">
+          <div class="row">
+            {% for item in module.grupo_de_notas %}
+            <div class="col-12 col-md-6">
+              <div class="post px-4 pb-5">
+                <a href="{{item.enlace_nota.url.href}}" class="img-overlay mb-3">
+                  {% set loadingAttr = item.imagen_nota.loading != 'disabled' ? 'loading="{{ item.imagen_nota.loading }}"' : '' %}
+                  <img src="{{ item.imagen_nota.src }}" alt="{{ item.imagen_nota.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid"/>
+                </a>
+                <h4 class="my-2"><a href="{{item.enlace_nota.url.href}}">{{ item.t_tulo_nota }}</a></h4>
+                <p class="mr-2"><a href="{{item.enlace_nota.url.href}}">{{ item.contenido_nota }}</a></p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

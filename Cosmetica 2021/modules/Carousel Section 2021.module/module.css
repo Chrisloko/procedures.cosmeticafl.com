@@ -1,0 +1,42 @@
+.carousel-border{
+  border: 12px solid #FFFFFF;
+  border-radius: 16px;
+}
+
+/* /////// */
+.carousel-section {
+  background: #FFFFFF !important;
+}
+
+.carousel-section h2 {
+  color: #00487c;
+}
+.carousel-section h4 {
+  color: #01487c;
+}
+
+.carousel-section hr {
+  background: #00487c;
+  border: 3px solid #00487c;
+}
+
+.carousel-section .owl-carousel .arrow{
+	border: 0;
+}
+
+.carousel-section .owl-carousel .arrow.arrow-prev{
+	left: -10px;
+}
+
+.carousel-section .owl-carousel .arrow.arrow-prev span{
+	background: url('https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/arrow-left.svg') no-repeat center center;
+}
+
+
+.carousel-section .owl-carousel .arrow.arrow-next{
+	right: -10px;
+}
+
+.carousel-section .owl-carousel .arrow.arrow-next span{
+	background: url('https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/arrow-left.svg') no-repeat center center;
+}

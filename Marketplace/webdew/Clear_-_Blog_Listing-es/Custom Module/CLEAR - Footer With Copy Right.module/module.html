@@ -1,0 +1,50 @@
+<div class="hubdew-footer padding_Tb">
+    <div class="container">
+<div class="row">
+<div class="col-lg-3">
+
+	<img src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="pb-4">
+{% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+  </div>
+<div class="col-lg-3">
+  {% inline_rich_text field="procedures" value="{{ module.procedures }}" %}
+  </div>
+<div class="col-lg-3">
+  {% inline_rich_text field="richtext_field_1" value="{{ module.richtext_field_1 }}" %}
+  </div>
+<div class="col-lg-3"></div>
+</div>
+</div>
+</div>
+<div class="hubdew-footer-copy-bottom">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center text-white">
+              Copyright © 2021 | Cosmetica Plastic Surgery & Anti-Aging. All Rights Reserved. Individual results may vary. | <br>Designed by Cosmetica Plastic Surgery & Anti-Aging
+          </div>
+         
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/Marketplace/webdew/Clear_-_Blog_Listing/Coded File/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/Marketplace/webdew/Clear_-_Blog_Listing/Coded File/bootstrap.min.css">
+
+{# =============== CSS Styling =============== #}
+{% require_css %}
+  <style>
+
+.hubdew-footer-logo.default .Foot_upload {
+    display: none;
+}
+.hubdew-footer-logo.Customlogo .default_footlogo{ display: none; }
+.hubdew-footer .hubdew-footer-social-icons svg {
+    width: 25px;
+    height: 100%;
+    
+}
+.hubdew-footer-social-icons a:first-child svg {
+    width: 12px;
+}
+ </style>
+
+{% end_require_css %}

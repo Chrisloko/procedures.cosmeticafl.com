@@ -1,0 +1,118 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_953964476",
+        "label" : "Hubdew Header",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "logo_setting" : {
+            "logo_option" : {
+              "link" : "https://www.cosmeticafl.com/es/",
+              "logo_images" : {
+                "alt" : "logo",
+                "height" : 50,
+                "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/logo.png",
+                "width" : 50
+              },
+              "logo_size" : 205,
+              "overhide_logo" : "upload",
+              "sticky_logo" : {
+                "alt" : "Clear-logo",
+                "height" : 45,
+                "override_inherited_src" : true,
+                "src" : "https://www.webdew.com/hubfs/Hubdew%20Template/Clear-logo.png",
+                "width" : 100
+              },
+              "sticky_logo_img" : {
+                "size_type" : "auto",
+                "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/logo.png",
+                "alt" : "logo",
+                "width" : 50,
+                "height" : 50,
+                "max_width" : 50,
+                "max_height" : 50
+              }
+            }
+          },
+          "navigation" : {
+            "dropdown_menu" : {
+              "drop_down_background" : {
+                "color" : "#EAF0F6",
+                "opacity" : 100
+              },
+              "sub_menu_background_color" : {
+                "color" : "#00a9f9",
+                "opacity" : 100
+              },
+              "submenu_color" : {
+                "color" : "#33475B",
+                "opacity" : 100
+              }
+            },
+            "font" : {
+              "color" : {
+                "color" : "#333333",
+                "opacity" : 100
+              },
+              "font_Weight" : "600",
+              "font_size" : 14,
+              "hover_color" : {
+                "color" : "#000",
+                "opacity" : 100
+              },
+              "sticky_menu_hover_color" : {
+                "color" : "#333",
+                "opacity" : 100
+              },
+              "text_transform" : "capitalize"
+            },
+            "menu" : 10502403612
+          },
+          "overrideable" : false,
+          "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Custom Module/Hubdew Header",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Hubdew Header",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

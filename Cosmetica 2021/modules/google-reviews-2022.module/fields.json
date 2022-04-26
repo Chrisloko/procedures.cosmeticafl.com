@@ -1,0 +1,134 @@
+[ {
+  "id" : "fe265b54-1891-f98a-93d0-971c586caab0",
+  "name" : "n_mero_de_bloque",
+  "display_width" : null,
+  "label" : "Número de bloque",
+  "required" : false,
+  "locked" : true,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "af4da023-50ba-9c54-93d0-2321d3ed06d8",
+  "name" : "bg_color",
+  "display_width" : null,
+  "label" : "BG Color",
+  "required" : false,
+  "locked" : true,
+  "type" : "color",
+  "default" : {
+    "color" : "#4AACCF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "3c898f20-13b8-5082-9767-929fe650a796",
+  "name" : "carrusel",
+  "display_width" : null,
+  "label" : "Carrusel",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "4a54257b-4114-a449-5bf6-dd91c20cfd85",
+    "name" : "nombre",
+    "display_width" : null,
+    "label" : "Nombre",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "ASHLEY LEWIS"
+  }, {
+    "id" : "0a86ec6a-88b6-d874-0f72-860ec11f773a",
+    "name" : "texto_resena",
+    "display_width" : null,
+    "label" : "Texto resena",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<img class=\"stars\" src=\"https://procedures.cosmeticafl.com/hubfs/stars_5_yellow.png\">\n<p class=\"box-p\">The staff is extremely knowledgeable and very welcoming. I went for a consultation and was able to have my procedure done the same day too! Definitely looking forward to going...</p>"
+  }, {
+    "id" : "690da31c-b9d1-dbad-9e17-b8cf4338a455",
+    "name" : "letra_inicial",
+    "display_width" : null,
+    "label" : "Letra inicial",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "A"
+  }, {
+    "id" : "4350f055-6a4a-36dc-bde2-42d27a1f7f54",
+    "name" : "color_fondo_letra",
+    "display_width" : null,
+    "label" : "Color fondo letra",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#33691e",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "texto_resena" : "<img class=\"stars\" src=\"https://procedures.cosmeticafl.com/hubfs/stars_5_yellow.png\">\n<p class=\"box-p\">The staff is extremely knowledgeable and very welcoming. I went for a consultation and was able to have my procedure done the same day too! Definitely looking forward to going...</p>",
+    "letra_inicial" : "A",
+    "color_fondo_letra" : {
+      "color" : "#33691e",
+      "opacity" : 100
+    },
+    "nombre" : "ASHLEY LEWIS"
+  }, {
+    "texto_resena" : "<img class=\"stars\" src=\"https://procedures.cosmeticafl.com/hubfs/stars_5_yellow.png\">\n<p class=\"box-p\">The staff is extremely knowledgeable and very welcoming. I went for a consultation and was able to have my procedure done the same day too! Definitely looking forward to going...</p>",
+    "letra_inicial" : "A",
+    "color_fondo_letra" : {
+      "color" : "#33691e",
+      "opacity" : 100
+    },
+    "nombre" : "ASHLEY LEWIS"
+  }, {
+    "texto_resena" : "<img class=\"stars\" src=\"https://procedures.cosmeticafl.com/hubfs/stars_5_yellow.png\">\n<p class=\"box-p\">The staff is extremely knowledgeable and very welcoming. I went for a consultation and was able to have my procedure done the same day too! Definitely looking forward to going...</p>",
+    "letra_inicial" : "A",
+    "color_fondo_letra" : {
+      "color" : "#33691e",
+      "opacity" : 100
+    },
+    "nombre" : "ASHLEY LEWIS"
+  }, {
+    "texto_resena" : "<img class=\"stars\" src=\"https://procedures.cosmeticafl.com/hubfs/stars_5_yellow.png\">\n<p class=\"box-p\">The staff is extremely knowledgeable and very welcoming. I went for a consultation and was able to have my procedure done the same day too! Definitely looking forward to going...</p>",
+    "letra_inicial" : "A",
+    "color_fondo_letra" : {
+      "color" : "#33691e",
+      "opacity" : 100
+    },
+    "nombre" : "ASHLEY LEWIS"
+  }, {
+    "texto_resena" : "<img class=\"stars\" src=\"https://procedures.cosmeticafl.com/hubfs/stars_5_yellow.png\">\n<p class=\"box-p\">The staff is extremely knowledgeable and very welcoming. I went for a consultation and was able to have my procedure done the same day too! Definitely looking forward to going...</p>",
+    "letra_inicial" : "A",
+    "color_fondo_letra" : {
+      "color" : "#33691e",
+      "opacity" : 100
+    },
+    "nombre" : "ASHLEY LEWIS"
+  }, {
+    "texto_resena" : "<img class=\"stars\" src=\"https://procedures.cosmeticafl.com/hubfs/stars_5_yellow.png\">\n<p class=\"box-p\">The staff is extremely knowledgeable and very welcoming. I went for a consultation and was able to have my procedure done the same day too! Definitely looking forward to going...</p>",
+    "letra_inicial" : "A",
+    "color_fondo_letra" : {
+      "color" : "#33691e",
+      "opacity" : 100
+    },
+    "nombre" : "ASHLEY LEWIS"
+  } ]
+} ]

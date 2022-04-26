@@ -1,0 +1,49 @@
+[ {
+  "id" : "bb1bf5e4-3b14-af17-46df-cee7d5593a49",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/cosmetica-logo.png",
+    "alt" : "cosmetica-logo",
+    "loading" : "lazy",
+    "width" : 321,
+    "height" : 71,
+    "max_width" : 321,
+    "max_height" : 71
+  }
+}, {
+  "id" : "8b5d2de0-8acb-a301-81e8-893d5b08f6d8",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Cosmetica is your best choice in the area of Port St. Lucie to get plastic and antiaging procedures.</p>"
+}, {
+  "id" : "96044317-e5d1-6a6a-331d-d1776f79c509",
+  "name" : "richtext_field_1",
+  "display_width" : null,
+  "label" : "ABOUT",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>ABOUT</p>\n<p>BLOG</p>\n<p>FAQ</p>\n<p>TELEMEDICINE</p>\n<p>CONTACT</p>"
+}, {
+  "id" : "08b2e2d1-802d-4125-f1fc-2c2f7bb3fe3d",
+  "name" : "procedures",
+  "display_width" : null,
+  "label" : "PROCEDURES",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>PROCEDURES</p>\n<ul>\n<li>FACE</li>\n<li>BREAST</li>\n<li>BODY</li>\n<li>NON-SURGICAL</li>\n<li>MEDSPA</li>\n<li>MEN'S</li>\n</ul>"
+} ]

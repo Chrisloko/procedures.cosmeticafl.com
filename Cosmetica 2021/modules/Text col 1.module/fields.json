@@ -1,0 +1,33 @@
+[ {
+  "id" : "a45552c6-29cc-7e26-0fde-3ebe8cf43bd8",
+  "name" : "identificador",
+  "display_width" : null,
+  "label" : "Identificador de seccion",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "89b732e4-3334-c3d9-b786-b5248dac7536",
+  "name" : "padding_seccion",
+  "display_width" : null,
+  "label" : "Padding-seccion",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "60px 0"
+}, {
+  "id" : "e13ed187-8d17-ee3a-37cc-6746a444ea90",
+  "name" : "contenido",
+  "display_width" : null,
+  "label" : "Contenido",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>BBL Process</h2>\n<p>Sed eget turpis ut sapien fermentum laoreet. Phasellus massa turpis, lacinia eu ligula ut, varius gravida est. Nullam nibh tellus, elementum sit amet est et, eleifend vulputate quam. Suspendisse eu ante nisi. Nam elit felis, elementum sed faucibus eu, bibendum et dolor. Mauris fermentum, sapien ac pretium imperdiet, mi dolor ultrices augue, eget mattis dolor orci ut nunc. Maecenas ac diam a neque rhoncus euismod quis et arcu. Curabitur scelerisque sem vitae ipsum imperdiet, sit amet consequat ante egestas.</p>\n<p>Donec vulputate commodo dolor, a pretium tortor porttitor a. Proin vehicula libero nec lectus laoreet gravida. Duis aliquam ultrices dui, at bibendum nulla mattis vitae. Nam dictum tortor quis dapibus porttitor. Nulla facilisi. Integer rhoncus nisi sit amet sem volutpat, rhoncus suscipit elit congue. Phasellus ut tortor a risus tincidunt feugiat. Phasellus mollis venenatis dapibus. Phasellus condimentum ut velit ac tempus. Suspendisse quis sapien ante. Praesent maximus est aliquet, blandit arcu in, venenatis mauris. Nam eu nisi et nisl placerat eleifend. Ut tincidunt egestas arcu, id rhoncus arcu ultricies nec. Maecenas pellentesque erat ut mattis iaculis.</p>"
+} ]

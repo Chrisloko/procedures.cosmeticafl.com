@@ -1,0 +1,61 @@
+[ {
+  "id" : "7f6de4fe-f2ed-5bf1-8d7d-6a64e651f7b4",
+  "name" : "men_",
+  "display_width" : null,
+  "label" : "Menú",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "10ef6194-fa4f-6837-ec49-7fd5f18ebbbd",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Is Eye Lift surgery for you?"
+  }, {
+    "id" : "edad4b3b-9487-4cd0-0a7c-d9207e49a3cb",
+    "name" : "n_mero_de_bloque",
+    "display_width" : null,
+    "label" : "Número de bloque a dirigir",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "texto" : "Is Eye Lift surgery for you?"
+  }, {
+    "texto" : "Is Eye Lift surgery for you?"
+  }, {
+    "texto" : "Is Eye Lift surgery for you?"
+  }, {
+    "texto" : "Is Eye Lift surgery for you?"
+  }, {
+    "texto" : "Is Eye Lift surgery for you?"
+  } ]
+}, {
+  "id" : "65d8e428-9f91-98c9-9a3b-3111861e8d63",
+  "name" : "barr_de_men_",
+  "display_width" : null,
+  "label" : "Barrá de menú",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

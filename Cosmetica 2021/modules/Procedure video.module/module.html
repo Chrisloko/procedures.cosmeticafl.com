@@ -1,0 +1,146 @@
+<style>
+  #retorno {
+  background: #E2E2E2;
+  padding: 60px 0; 
+}
+#retorno h2 {
+  text-align:left;
+  color:#4aaccf;
+  margin-bottom:20px;
+  font-weight:700;
+  font-size:26
+}
+
+#retorno picture img {
+  width:100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.youtube {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto 0px;
+    height: 400px;
+    max-width: 930px;
+    border-radius: 40px;
+}
+.youtube img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position:absolute;
+}
+.conoce {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    height: 73px;
+    width: 360px;
+}
+  #retorno .play-btn {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+  #retorno h3 {
+    margin: 2rem auto;
+    font-weight: 700;
+    font-size: 2.3rem;
+  }
+  #retorno p {
+    margin: 0 auto 15px;
+  }
+  #retorno .btns-cont{
+    margin-top:60px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    text-transform:uppercase;
+  }
+#retorno .btn.btn-rojo {
+    background-color: #ff1643;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+  @media (max-width: 991px) {
+    #retorno {
+      background: #E2E2E2;
+      padding: 2rem 0rem 3rem; 
+    }
+    #retorno {
+      text-align: center;
+    }
+      #retorno h3 {
+        margin: 1rem auto;
+        font-size: 1.5rem; 
+    } 
+}
+@media(max-width:767px){
+  #retorno .youtube {
+    width: 100%;
+    margin: 0 auto 0px;
+    height: 224px;
+  }
+}
+@media(max-width:450px){
+  #retorno .btns-cont {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+}
+  #retorno .btn.pad-mob{
+    padding: 0.5rem 0.5rem;
+  }
+  #retorno .mar-btn {
+    margin-top: 15px;
+  }
+  #retorno h2 {
+    font-size: 25px;
+  }
+}
+</style>
+<section id="retorno">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                  {{ module.contenido }}
+                </div>
+                <div class="col-md-6">  
+                  
+                  <div class="youtube" data-embed="{{ module.embed_youtube }}"> 
+                    <div class="conoce">
+                      <img class="play-btn" src="https://f.hubspotusercontent40.net/hubfs/6916298/PP-regreso/play-button.png" alt="Procedure video" loading="lazy">
+                    </div>
+                    <picture>
+                      <source srcset="{{ module.imagen_previa_webp.src }}" type="image/webp" >
+                      <source srcset="{{ module.imagen_previa.src }}" type="image/jpeg"> 
+                      <img src="{{ module.imagen_previa.src }}" alt="{{ module.imagen_previa.alt }}" {{ loadingAttr }} {{ sizeAttrs }} loading="lazy">     
+                    </picture>
+                  </div>      
+                  
+                </div>
+            </div>
+        </div>
+
+        
+    </section>

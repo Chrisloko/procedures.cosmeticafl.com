@@ -1,0 +1,116 @@
+<style>
+#accordion{
+  
+}
+#accordion h2{
+  font-size:40px;
+  color: #00487c;
+  margin-bottom: 30px;
+}
+.heading{
+  margin-bottom:30px;
+  font-weight: 700;
+  border-bottom: #00487c solid 2px;
+  padding-bottom: 10px;
+}
+.w-100 {
+  width:100%;
+}
+.accordion {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 15px 20px;
+  width: 100%;
+  font: inherit;
+  font-weight: 700;
+  color: #666;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  position:relative;
+  font-size:19px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* .accordion__button:after {
+  content: '\002B';
+  display: block;
+  margin-left: 15px;
+  font: inherit;
+  color: #fff;
+} */
+
+.accordion__button:hover,
+.accordion__button.is-active {
+  background: transparent;
+}
+
+/* .accordion__button.is-active:after {
+  content: '\2212';
+} */
+#accordion .plus-minus{
+  position:absolute;
+  right:0;
+  top:50%;
+  background-image:url('https://procedures.cosmeticafl.com/hubfs/plus.jpg');
+  height:24px;
+  width:24px;
+  background-repeat:no-repeat;
+  transform: translateY(-50%);
+}
+#accordion .accordion__button.is-active .plus-minus {
+  background-image:url('https://procedures.cosmeticafl.com/hubfs/minus.jpg');
+}
+
+.accordion__button:focus {
+  background: transparent;
+  outline: none;
+}
+
+.accordion__body {
+  /* "max-height" isn't needed, but it's better for the first page draw. */
+  max-height: 0;
+  background: #fff;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+</style>
+<div id="accordion" style="padding:{{ module.padding_seccion }}">
+    <!-- Accordion -->
+  <div class="container">
+    <div class="row w-100">
+      <div class="col-12">
+        {% inline_rich_text field="titulo" value="{{ module.titulo }}" %}
+      
+        <div class="accordion js-accordion w-100" data-id="accordion1">
+          <!-- Accordion item -->
+          {% for item in module.questions %}
+            <button type="button" id="accordion{{loop.index}}" class="accordion__button js-accordion__button" aria-expanded="false" aria-controls="sectionOne">
+                {{item.question}}
+                <div class="plus-minus"></div>
+            </button>
+            <div id="sectionOne" class="accordion__body js-accordion__body" role="region" aria-labelledby="accordion{{loop.index}}">
+                <div style="padding: 20px;">
+                    <p style="margin: 0;">{{item.answer}}</p>
+                </div>
+            </div>
+          {% endfor %}    
+            <!--/ Accordion item -->
+        </div>
+      </div>
+     </div>
+  </div>
+    
+    <!--/ Accordion -->
+</div>

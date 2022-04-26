@@ -1,0 +1,117 @@
+#pruebas-psi .img-wrapper.lazy{
+  background-image:none!important
+}
+
+#pruebas-psi .title{
+  font-size: 1.1rem !important;
+  letter-spacing: 0px;
+  color: #1A1A1A;
+  padding:10px 20px;
+}
+#pruebas-psi .text-top{
+  font-size: 40px;
+  color: #00487c;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+#pruebas-psi .boxes{
+  width:100%;
+}
+.text-box{
+  /* height:100px;*/
+}
+.light-blue-btn{
+  background-color: #4AACCF;
+  font-size: 17px;
+  border-width: 0px!important;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0.16em 0.23em 0.48em rgb(0 0 0 / 40%); 
+  color:#fff;
+  }
+.dark-blue-btn{
+  background-color: #00487C;
+  font-size: 17px;
+  border-width: 0px!important;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0.16em 0.23em 0.48em rgb(0 0 0 / 40%); 
+  color:#fff;
+  }
+p{
+  font-size:1rem;
+}
+#pruebas-psi .boxes-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#pruebas-psi .box-wrapper {
+  padding: 0px;
+}
+#pruebas-psi .box{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #00000029;
+  position:relative;
+  margin-bottom:20px;
+}
+#pruebas-psi .body{
+  padding:20px 15px;
+
+}
+#pruebas-psi .text-box {
+
+}
+
+#pruebas-psi .text-box .logo{
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 0;
+}
+#pruebas-psi .cont-btn {
+  width:100%;
+  text-align: center;
+  margin-top: 40px;
+}
+#pruebas-psi .boton {
+  color:#1A1A1A;
+  background-color:transparent;
+  border:solid #1A1A1A 2px;
+  font-weight:600;
+}
+
+
+#pruebas-psi .box-wrapper a {
+  display: block;
+  height: 100%;
+  margin-bottom: 0px;
+  text-decoration: none;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+#pruebas-psi .box-wrapper a:hover {
+  background: #00487c;
+  opacity: 0.6;
+  color:#fff;
+}
+
+@media (max-width: 460px){
+
+  #pruebas-psi .box-wrapper{
+    width:100% !important;
+    margin-bottom: 20px;
+  }
+  
+  #pruebas-psi  .img-wrapper{
+    height:100px !important;
+  }
+
+}

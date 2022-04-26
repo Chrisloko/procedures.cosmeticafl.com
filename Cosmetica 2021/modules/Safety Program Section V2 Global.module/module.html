@@ -1,0 +1,192 @@
+<style>
+.safety-program-section #steps h2 {
+    color: #00487c;
+    font-size: 28px;
+    font-weight: 700;
+}
+.border-safety{
+  background:#fff;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
+  padding:15px;
+}
+.step{
+  font-size:18px;
+  color:#00487C;
+  text-transform:uppercase;
+  font-weight:600;
+  display:block;
+  margin-bottom:10px;
+}
+.card-elem{
+  border: 2px #00487c solid;
+  background: #f4f4f4;
+  -webkit-box-shadow: 4px 0px 6px -2px #00000029;
+  border-radius: 10px;
+  box-shadow: 4px 0px 6px -2px #00000029;
+  min-height: 280px;
+  padding: 15px 28px;
+}
+
+.card-elem .number{
+  background: url('https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/blue-ring.svg') no-repeat center;
+  background-size: cover;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 30px;
+  height: 50px;
+  line-height: 45px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 50px;
+}
+
+@media(max-width: 768px){
+  .card-elem{
+    min-height: unset;
+    padding: 10px 20px;
+  }
+
+  .card-elem .number{
+    font-size: 20px;
+    height: 40px;
+    line-height: 35px;
+    margin-bottom: 15px;
+    width: 40px;
+  }
+
+  .safety-img{
+    margin: 0 auto;
+    width: 240px;
+  }
+}
+#steps h3{
+  text-transform: uppercase;
+  color: #00487C;
+  font-size:18px;
+}
+#steps .txt p{
+  color:#666
+}
+.safety-paragraph, .safety-paragraph p, .safety-paragraph span {
+  color: #666 !important;
+  font-family: Raleway,sans-serif !important;
+  font-weight: 400 !important;
+  text-align: justify !important;
+  line-height: 1.75 !important;
+  font-size: 18px !important;
+  letter-spacing: .25px !important;
+}
+
+.safety-program-section .btn-show-steps {
+  background: transparent;
+  border-bottom: 0;
+  color: #666;
+  font-size: 24px;
+  font-weight: 700;
+  height: auto;
+  line-height: 40px;
+  min-width: 240px;
+  text-transform: uppercase;
+  border-color:transparent;
+}
+.safety-program-section .btn-show-steps {
+  position:relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.safety-program-section .btn-show-steps:hover {
+  border-color: transparent;
+}
+.safety-program-section .btn-show-steps.up {
+   color: #00487C;
+}
+.safety-program-section .btn-show-steps:after {
+ content: "\f067";
+ font-family: "Font Awesome 5 Free";
+ position:absolute;
+ right:0;
+ top:50%;
+ transform: translateY(-50%);
+}
+.safety-program-section .btn-show-steps.up:after {
+  content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+}
+.safety-program-section .btn-show-steps:hover {
+  background: transparent;
+  border-bottom: 0;
+  color: #00487C;
+  font-weight: 700;
+  height: auto;
+  min-width: 240px;
+  text-transform: uppercase;
+}
+.safety-program-section .btn-primary.focus, #steps .btn-primary:focus {
+  color: #00487C;
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+.safety-program-section .btn-show-steps:active{
+    color: #00487C!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+    box-shadow:none!important;
+}
+.safety-steps-block {
+  height:fit-content;
+  padding-top:30px;
+}
+.safety-steps-block.noheight{
+  height: 0;
+  overflow: hidden;
+  padding-top:0px;
+}
+</style>
+<section id="block-{{ module.n_mero_de_bloque }}" class="safety-program-section py-3" style="background-image: linear-gradient(180deg,#ece9e6 0%,#ffffff 100%)!important;">
+  <div id="steps" class="container border-safety">
+    <div class="row mb-2">
+      <div class="col-md-7 mb-4">
+        <h2>{{ module.t_tulo }}</h2>
+        <div class="safety-paragraph">
+          {{ module.p_rrafo }}
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        {% if module.image_field.src %}
+        {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+        {% if module.image_field.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.image_field.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+        <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid safety-img" loading="lazy" width="485" height="481">
+        {% endif %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button class="btn btn-primary btn-show-steps">
+          VIEW OUR SAFETY STEPS
+        </button>
+<!--         <i class="fab fa-angle"></i> -->
+      </div>
+    </div>
+    <div class="row safety-steps-block noheight">
+      {% for item in module.lista_de_pasos %}
+      <div class="col-12 col-sm-6 col-lg-3 program-card-container mb-4">
+        <div class="card-elem">
+          <span class="step">STEP {{ loop.index }}</span>
+          <div class="txt">{{ item.texto }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

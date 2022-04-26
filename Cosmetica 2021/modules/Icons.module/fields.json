@@ -1,0 +1,191 @@
+[ {
+  "id" : "227295aa-df6c-ab18-e730-c09c7566db66",
+  "name" : "color_bg",
+  "display_width" : null,
+  "label" : "Color BG",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#e2e2e2",
+    "opacity" : 100
+  }
+}, {
+  "id" : "667cec59-a1ea-34ac-1753-66083dbcae68",
+  "name" : "padding_seccion",
+  "display_width" : null,
+  "label" : "Padding seccion",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "60px 0;"
+}, {
+  "id" : "6939a0e1-37e3-00ec-cc33-438b7581cd83",
+  "name" : "columns",
+  "display_width" : null,
+  "label" : "columns",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "100", "1" ], [ "46", "2" ], [ "30", "3" ], [ "22", "4" ], [ "19", "5" ] ],
+  "type" : "choice",
+  "default" : "19"
+}, {
+  "id" : "d4695408-ac3b-addc-8342-e0628cf07de9",
+  "name" : "boxes",
+  "display_width" : null,
+  "label" : "Lista de Bloques",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "0c2b722e-69f2-1342-8e03-7a238767c686",
+    "name" : "texto_caja",
+    "display_width" : null,
+    "label" : "Texto Caja",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p class=\"text-box\">Diagnóstico de condiciones actuales.</p>"
+  }, {
+    "id" : "9ff3256e-94d5-ed22-e282-db1fcd1f76ad",
+    "name" : "color_fondo",
+    "display_width" : null,
+    "label" : "Color fondo",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FAFAFA",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "30544432-fd54-04f8-b343-af0f2aa53f32",
+    "name" : "icono",
+    "display_width" : null,
+    "label" : "Icono",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://f.hubspotusercontent40.net/hubfs/6916298/PP-regreso/diagnostic.png",
+      "alt" : "diagnostic",
+      "width" : 100,
+      "height" : 100,
+      "max_width" : 100,
+      "max_height" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "color_fondo" : {
+      "color" : "#FAFAFA",
+      "opacity" : 100
+    },
+    "icono" : {
+      "src" : "https://f.hubspotusercontent40.net/hubfs/6916298/PP-regreso/diagnostic.png",
+      "alt" : "diagnostic",
+      "width" : 100,
+      "height" : 100,
+      "max_width" : 100,
+      "max_height" : 100
+    },
+    "texto_caja" : "<p class=\"text-box\">Diagnóstico de condiciones actuales.</p>"
+  }, {
+    "color_fondo" : {
+      "color" : "#FAFAFA",
+      "opacity" : 100
+    },
+    "icono" : {
+      "src" : "https://f.hubspotusercontent40.net/hubfs/6916298/PP-regreso/diagnostic.png",
+      "alt" : "diagnostic",
+      "width" : 100,
+      "height" : 100,
+      "max_width" : 100,
+      "max_height" : 100
+    },
+    "texto_caja" : "<p class=\"text-box\">Diagnóstico de condiciones actuales.</p>"
+  }, {
+    "color_fondo" : {
+      "color" : "#FAFAFA",
+      "opacity" : 100
+    },
+    "icono" : {
+      "src" : "https://f.hubspotusercontent40.net/hubfs/6916298/PP-regreso/diagnostic.png",
+      "alt" : "diagnostic",
+      "width" : 100,
+      "height" : 100,
+      "max_width" : 100,
+      "max_height" : 100
+    },
+    "texto_caja" : "<p class=\"text-box\">Diagnóstico de condiciones actuales.</p>"
+  }, {
+    "color_fondo" : {
+      "color" : "#FAFAFA",
+      "opacity" : 100
+    },
+    "icono" : {
+      "src" : "https://f.hubspotusercontent40.net/hubfs/6916298/PP-regreso/diagnostic.png",
+      "alt" : "diagnostic",
+      "width" : 100,
+      "height" : 100,
+      "max_width" : 100,
+      "max_height" : 100
+    },
+    "texto_caja" : "<p class=\"text-box\">Diagnóstico de condiciones actuales.</p>"
+  } ]
+}, {
+  "id" : "0f4bb3da-77f0-20e6-fe82-98a8877f18c1",
+  "name" : "texto_boton",
+  "display_width" : null,
+  "label" : "Texto Boton",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CONTACTAR A UN CONSULTOR"
+}, {
+  "id" : "08823445-6e99-a7e0-8c56-f4d99c2c934d",
+  "name" : "liga_boton",
+  "display_width" : null,
+  "label" : "Liga Boton",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://cdg.com.mx/leadership-assessment-center.htm",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "79ea210b-5ff3-7e40-c03f-7e5ded94cf6d",
+  "name" : "con_boton",
+  "display_width" : null,
+  "label" : "Mostrar botón",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

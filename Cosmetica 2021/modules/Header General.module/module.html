@@ -1,0 +1,167 @@
+<style>
+  header{
+    background-image: url('{{module.bg.src}}');
+    background-position: top center;
+    background-size: cover;
+  }
+  
+  @media(max-width: 767px){
+    header{
+      background-image: url('{{module.bg_mobile.src}}');
+      background-position: top right;
+    }
+  }
+</style>
+
+<nav class="navbar {{"second-bar" if module.mostrar_men_ else "navbar-light bg-light" }} d-block">
+  <div class="nav-item">
+    <a class="header-logo" href="{{ module.enlace_logo.url.href }}">
+      <img src="https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/logo.svg" width="320" height="95" loading="lazy" alt="Cosmetica" class="img-fluid"/>
+    </a>
+  </div>
+
+  <div class="get {{ "middle" if module.get_a_quote_2 == "" }}">
+    {% set href = module.enlace_get.url.href %}
+    {% if module.enlace_get.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    {% set rel = [] %}
+    {% if module.enlace_get.no_follow %}
+    {% do rel.append("nofollow") %}
+    {% endif %}
+    {% if module.enlace_get.open_in_new_tab %}
+    {% do rel.append("noopener") %}
+    {% endif %}
+    {% if module.get_a_quote != "" %}
+    <a href="{{ href }}"
+       {% if module.enlace_get.open_in_new_tab %}target="_blank"{% endif %}
+       {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+       >
+      {{ module.get_a_quote }}
+    </a>
+    {% endif %}
+
+    {% set href = module.enlace_get_2.url.href %}
+    {% if module.enlace_get_2.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    {% set rel = [] %}
+    {% if module.enlace_get_2.no_follow %}
+    {% do rel.append("nofollow") %}
+    {% endif %}
+    {% if module.enlace_get_2.open_in_new_tab %}
+    {% do rel.append("noopener") %}
+    {% endif %}
+    {% if module.get_a_quote_2 != "" %}
+    <a href="{{ href }}"
+       {% if module.enlace_get_2.open_in_new_tab %}target="_blank"{% endif %}
+       {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+       data-toggle="modal" data-target="#quoteModal">
+      {{ module.get_a_quote_2 }}
+    </a>
+    {% endif %}
+
+  </div>
+</nav>
+
+<header class="container-fluid pl-0 pr-0 header-bg {{"web" if module.mostrar_men_}}">
+  <div class="overlay">&nbsp;</div>
+ 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="blog-header {{" header-web" if module.mostrar_men_}}">
+              <div class="txt">
+                {% if module.mostrar_subtitulo %}
+                   <h2 class="">{{ module.subt_tulo }}</h2>
+                {% endif %}
+                <h1 class="">{{ module.etiqueta_h1 }}</h1>
+                {% if module.p_rrafo_1 != "" %}
+                <p>{{ module.p_rrafo_1 }}</p>
+                {% endif %}
+                <p>{{ module.p_rrafo_2 }}</p>
+                <p>{{ module.p_rrafo_3 }}</p>
+                {% if module.cta_1 != "" %}
+                <a href="#" class="btn btn-read mb-2" data-toggle="modal" data-target="#formModal1">
+                  {{ module.cta_1 }}
+                </a>
+                {% endif %}
+
+                {% if module.cta_2 != "" %}
+                &nbsp;&nbsp;&nbsp;
+                {% endif %}
+                {% if module.cta_2 != "" %}
+                <a href="#block-{{ module.n_mero_de_bloque }}" class="btn btn-read mb-2">
+                  {{ module.cta_2 }}
+                </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% if module.con_formulario %}
+             <div class="col-lg-4 pad-form">
+               <div class="box">
+                   {% form
+                      form_to_use="{{ module.formulario_derecha.form_id }}"
+                      response_response_type="{{ module.formulario_derecha.response_type }}"
+                      response_message="{{ module.formulario_derecha.message }}"
+                      response_redirect_id="{{ module.formulario_derecha.redirect_id }}"
+                      response_redirect_url="{{module.formulario_derecha.redirect_url}}"
+                      gotowebinar_webinar_key="{{ module.formulario_derecha.gotowebinar_webinar_key }}"
+                    %}
+               </div>
+            
+            </div>
+          {% endif %}
+         
+        </div>
+      </div>
+    
+
+</header>
+
+<div class="modal fade" id="formModal1" tabindex="-1" aria-labelledby="formModal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="formModal1Label">{{ module.cta_1 }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {% form
+          form_to_use="{{ module.formulario.form_id }}"
+          response_response_type="{{ module.formulario.response_type }}"
+          response_message="{{ module.formulario.message }}"
+          response_redirect_id="{{ module.formulario.redirect_id }}"
+          response_redirect_url="{{module.formulario.redirect_url}}"
+          gotowebinar_webinar_key="{{ module.formulario.gotowebinar_webinar_key }}"
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="quoteModalLabel">{{ module.get_a_quote_2 }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {% form
+          form_to_use="{{ module.formulario_quote.form_id }}"
+          response_response_type="{{ module.formulario_quote.response_type }}"
+          response_message="{{ module.formulario_quote.message }}"
+          response_redirect_id="{{ module.formulario_quote.redirect_id }}"
+          response_redirect_url="{{module.formulario_quote.redirect_url}}"
+          gotowebinar_webinar_key="{{ module.formulario_quote.gotowebinar_webinar_key }}"
+        %}
+      </div>
+    </div>
+  </div>
+</div>

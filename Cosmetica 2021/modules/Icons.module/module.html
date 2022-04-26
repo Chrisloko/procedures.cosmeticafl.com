@@ -1,0 +1,156 @@
+<style>
+#protocolos .title{
+  font-size: 1.1rem !important;
+  letter-spacing: 0px;
+  color: #1A1A1A;
+  padding:10px 20px;
+}
+#protocolos .text-top{
+  text-align:center;
+  font-weight:600;
+}
+.text-box{
+  /* height:100px;*/
+}
+p{
+  font-size:1rem;
+}
+#protocolos p {
+  text-align:center;
+  color:#666;
+  margin:0 auto 25px;
+  font-size:18px;
+  max-width: 800px;
+}
+#protocolos h3 {
+  text-align:center;
+  color:#ED3940;
+  font-weight:700;
+  margin-bottom:20px;
+}
+#protocolos h4{
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+#protocolos .boxes-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#protocolos .box-wrapper {
+  padding: 0px;
+  margin:0 auto;
+}
+#protocolos .box{
+  position:relative;
+  padding: 5px 0;
+  margin-top: 30px;
+  box-shadow: 0px 3px 10px #00000029;
+  border-radius: 19px;
+}
+#protocolos .body{
+  padding:20px 15px;
+  text-align: center;
+  
+}
+#protocolos .icono{
+  display:block;
+  margin:0 auto;
+  width: 70px;
+}
+#protocolos .text-box {
+  margin-bottom:0;
+  text-align:center;
+}
+#protocolos .text-box .logo{
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 0;
+}
+#protocolos .cont-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+#protocolos .boton {
+  color:#1A1A1A;
+  background-color:transparent;
+  border:solid #1A1A1A 2px;
+  font-weight:600;
+}
+#protocolos .btn-yellow{
+  margin-top:15px;
+  display: inline-block;
+  font-weight:600;
+}
+#protocolos .img-wrapper a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+#protocolos .img-wrapper a:hover {
+  background: #fee84e;
+  opacity: 0.6;
+}
+@media(max-width:767px){
+  
+}
+
+@media (max-width: 460px){
+  #protocolos .box-wrapper{
+    width:100% !important;
+  }
+  #protocolos .box{
+    margin: 15px 15px
+  }
+  #protocolos h3 {
+    font-size:25px;  
+  }
+}
+
+</style>
+<section id="protocolos" class="" style="background-color: {{ module.color_bg.color }}; padding:{{ module.padding_seccion }}">
+  <div class="container">
+    <div class="row">
+      <div class="boxes w-100">
+        <div class="boxes-wrapper w-100">
+          {% for box in module.boxes %}
+          <div class="box-wrapper box" style="width:{{module.columns}}%; background-color:{{box.color_fondo.color}}">
+            <div class="body" style="">
+              <img class="icono" src="{{ box.icono.src }}" alt="icono" width="82" height="82" loading="lazy">
+              {{ box.texto_caja }}
+              <!--  <mg class="logo" src="https://lp.cdg.com.mx/hubfs/sitio-web-2021/icon-cdg.svg" alt="logo CDG"> -->  
+              {% if box.con_boton %}
+              <a class="btn-yellow"  href="{{box.liga_boton.url.href}}">
+                {{box.text_boton}}
+              </a>
+              {% endif %}
+            </div>      
+          </div>
+          {% endfor %}        
+        </div>
+      </div>
+      {% if module.con_boton %}
+      <div class="cont-btn">
+        {% set href = module.liga_boton.url.href %}
+        {% if module.liga_boton.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.liga_boton.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.liga_boton.rel %}rel="{{ module.liga_boton.rel }}"{% endif %}
+           class="btn boton">
+          {{ module.texto_boton }}
+        </a>
+
+      </div>
+      {% endif %}  
+    </div>
+  </div>
+</section>

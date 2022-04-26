@@ -1,0 +1,364 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 27,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/webdew/Clear_-_Blog_Listing-es/Coded File/style.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Cosmetica 2021/assets/css/style.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Coded File/ClearScript.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Coded File/jquery-3-3-1-latest.js"
+  } ],
+  "customHead" : "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css\">\n\n<script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n<script src=\"{{ get_asset_url('/Cosmetica 2021/assets/js/main.js') }}\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>\n\n<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_164003490644374",
+        "label" : "Hubdew Header Main",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false,
+          "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Template/Hubdew Header Main.template.json"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1640036138846143",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "container",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "padding-top:120px; padding-bottom:40px",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1640038037625449",
+            "label" : "Rich Text",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : true,
+              "widget_name" : "Rich Text",
+              "schema_version" : 2,
+              "path" : "@hubspot/rich_text",
+              "html" : "<h2 style=\"color: #4aaccf; font-size: 32px; margin-bottom: 15px; font-weight: bold;\">Search results</h2>"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1640036160043176",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "row",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_164003485493455",
+                "label" : "search_input custom",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "padding-bottom:30px;",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "widget_name" : "search_input custom",
+                  "schema_version" : 2,
+                  "path" : "/search_input custom"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "padding-bottom:30px;",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_164003486930359",
+                "label" : "search_results custom",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "per_widget_wrapper_html" : "",
+                  "overrideable" : true,
+                  "widget_name" : "search_results custom",
+                  "schema_version" : 2,
+                  "path" : "/search_results custom"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "row",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "container",
+        "cssStyle" : "padding-top:120px; padding-bottom:40px",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_164003493048679",
+        "label" : "Footer - 2021",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : true,
+          "widget_name" : "Footer - 2021",
+          "schema_version" : 2,
+          "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Custom Module/Footer - 2021",
+          "men_1" : [ {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://www.cosmeticafl.com/face"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "FACE"
+          }, {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://www.cosmeticafl.com/body"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "BODY"
+          }, {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://www.cosmeticafl.com/breast"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "BREAST"
+          }, {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://www.cosmeticafl.com/non-surgical"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "NON-SURGICAL"
+          }, {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://www.cosmeticafl.com/medspa"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "MEDSPA"
+          }, {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://www.cosmeticafl.com/men"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "MEN'S"
+          } ],
+          "men_2" : [ {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://www.cosmeticafl.com/about"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "ABOUT"
+          }, {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://www.cosmeticafl.com/before-and-after-photos/"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "GALLERY"
+          }, {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://cosmeticafl.com/faq/"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "FAQs"
+          }, {
+            "link_field" : {
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://blog.cosmeticafl.com/blog"
+              },
+              "open_in_new_tab" : false,
+              "no_follow" : false
+            },
+            "text_field" : "BLOG"
+          } ]
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

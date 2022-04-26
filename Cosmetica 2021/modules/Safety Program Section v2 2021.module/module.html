@@ -1,0 +1,42 @@
+<section id="block-{{ module.n_mero_de_bloque }}" class="safety-program-section py-3" style="background-image: linear-gradient(180deg,#ece9e6 0%,#ffffff 100%)!important;">
+  <div id="steps" class="container border-safety">
+    <div class="row mb-2">
+      <div class="col-md-7 mb-4">
+        <h2>{{ module.t_tulo }}</h2>
+        <div class="safety-paragraph">
+          {{ module.p_rrafo }}
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        {% if module.image_field.src %}
+        {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+        {% if module.image_field.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.image_field.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+        <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid safety-img">
+        {% endif %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button class="btn btn-primary btn-show-steps">
+          VIEW OUR SAFETY STEPS
+        </button>
+<!--         <i class="fab fa-angle"></i> -->
+      </div>
+    </div>
+    <div class="row safety-steps-block noheight">
+      {% for item in module.lista_de_pasos %}
+      <div class="col-12 col-sm-6 col-lg-3 program-card-container mb-4">
+        <div class="card-elem">
+          <span class="step">STEP {{ loop.index }}</span>
+          <div class="txt">{{ item.texto }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

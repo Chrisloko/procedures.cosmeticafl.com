@@ -1,0 +1,20 @@
+<div class="{{name}}">
+    {% if module.do_you_want_button %}
+  
+    <div class="CL-Button_Pack">
+     <span id="pack_btn"><!--  <i class="fas fa-chevron-right"></i> -->BUY</span>
+        <ul>
+            {% for item in module.button_link %}
+            <li>
+                {% set href = item.add_link.url.href %}
+                <a class="btn" href="{{ href }}" {% if item.add_link.open_in_new_tab %}target="_blank" {% endif %} {% if item.add_link.no_follow %}rel="nofollow" {% endif %}>
+                    {{ item.button_text }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</div>
+
+

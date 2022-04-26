@@ -1,0 +1,82 @@
+[ {
+  "id" : "81b819ee-1269-eeec-155c-65676b603c5f",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "94dd4e84-d78d-9782-915a-e2903afa62b0",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get Free Template Pack"
+  }, {
+    "id" : "f92380a7-58ef-c636-d5cd-c3f832afdfdf",
+    "name" : "add_link",
+    "display_width" : null,
+    "label" : "Add Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "button_text" : "Get Free Template Pack",
+    "add_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "button_text" : "Get Free Template Pack",
+    "add_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "a3044987-e207-5665-1ff0-313d331bb98c",
+  "name" : "do_you_want_button",
+  "display_width" : null,
+  "label" : "Do You Want Button ?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

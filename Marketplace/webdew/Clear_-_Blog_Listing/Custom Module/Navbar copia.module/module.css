@@ -1,0 +1,64 @@
+.social-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list li{
+  float: left;
+  margin: 0 10px;
+}
+
+.social-list li a{
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.navbar-first{
+  background: rgba(0, 0, 0, 0.7);
+  height: 70px;
+  position: absolute;
+  top: 43px;
+  width: 100%;
+  z-index: 11;
+}
+
+.navbar-first .dropdown-menu{
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+}
+
+@media(max-width: 992px) {
+  .navbar-first{
+    background: none;
+    height: 50px;
+  }
+  
+  .navbar-first > .container > .row {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

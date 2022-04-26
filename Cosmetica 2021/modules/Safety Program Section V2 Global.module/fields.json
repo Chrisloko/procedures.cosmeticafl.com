@@ -1,0 +1,98 @@
+[ {
+  "id" : "ce17bfc2-ce2a-71aa-1cde-2c59b1b55588",
+  "name" : "n_mero_de_bloque",
+  "display_width" : null,
+  "label" : "Número de bloque",
+  "required" : false,
+  "locked" : true,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "accd30e7-0571-bce1-94d8-5624eccec29a",
+  "name" : "t_tulo",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our Safety Program"
+}, {
+  "id" : "bb7cc960-46f5-c4b5-5bfd-ebcb4578eae0",
+  "name" : "p_rrafo",
+  "display_width" : null,
+  "label" : "Párrafo",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p style=\"font-size: 16px;\">The Cosmetica Plastic Surgery &amp; Anti-Aging Patient Safety Program involves our patients, surgeon, nurses, staff, and patient families or other caregivers all working together toward a common goal: Assuring the safest possible surgical experience.</p>\n<p><strong>Steps to Ensure Your Safety</strong></p>\n<p style=\"font-size: 16px;\">At Cosmetica Plastic Surgery &amp;&nbsp;Anti-Aging, your safety is our number one priority. To make sure that we do everything possible to maintain your safety, we have formalized our steps into The Cosmetica Plastic Surgery &amp;&nbsp;Anti-Aging Patient Safety Program which includes these elements:</p>"
+}, {
+  "id" : "34c59600-c547-785b-30a1-e95c0d50c4a7",
+  "name" : "lista_de_pasos",
+  "display_width" : null,
+  "label" : "Lista de pasos",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 9
+  },
+  "children" : [ {
+    "id" : "14c7a3de-378a-2e24-364d-cc399a9b2cf7",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  }, {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  }, {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  }, {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  }, {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  }, {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  }, {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  }, {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  }, {
+    "texto" : "<p>We ask you to describe in <strong>detail any medical problems</strong>, medications you take, and any previous surgeries. This allows us to understand any special <em>needs you may have.</em></p>"
+  } ]
+}, {
+  "id" : "6c518477-435e-e067-b34d-7f6de71bab77",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/safety-program-01.png",
+    "alt" : "safety-program-01",
+    "loading" : "lazy",
+    "width" : 619,
+    "height" : 602,
+    "max_width" : 619,
+    "max_height" : 602
+  }
+} ]

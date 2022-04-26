@@ -1,0 +1,21 @@
+<div id="{{ module.identificador }}"></div>
+<section id="single-image" style="background-color:{{ module.color_fondo }}; padding:{{ module.padding_seccion }};">
+  <div class="container">
+    <div class="row">
+      {% if module.con_titulo %}
+	      <div class="col-12">
+          <h2>
+            {{ module.titulo }}
+          </h2>
+        </div>
+      {% endif %}
+      <div class="col-lg-{{ module.ancho_columna_izq }}">
+        <img class="image" src="{{ module.imagen.src }}" alt="{{ module.imagen.alt }}" width="399" height="399" loading="lazy" style="max-height:{{ module.max_height_image_in_px }}">
+      </div>
+       <div class="col-lg-{{ module.ancho_columna_derecha }} mt-mob">
+         {% inline_rich_text field="contenido" value="{{ module.contenido }}" %}
+       </div>
+    </div>
+  </div>
+  
+</section>

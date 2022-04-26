@@ -1,0 +1,18 @@
+<section class="product-nav-section pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 {{ "menu-bar" if module.barr_de_men_ }}">
+
+        <ul class="nav nav-pills mb-3" id="pills-tab">
+          {% for item in module.men_ %}
+          <li class="nav-item">
+            <a class="nav-link nav-scroll" id="pills-{{item.n_mero_de_bloque}}-tab" href="#block-{{item.n_mero_de_bloque}}">
+              {{ item.texto }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

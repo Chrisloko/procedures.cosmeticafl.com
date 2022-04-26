@@ -1,0 +1,20 @@
+[ {
+  "id" : "0686ad3e-5f13-64c2-3e3d-eba4f1e4f57a",
+  "name" : "n_mero_de_bloque",
+  "display_width" : null,
+  "label" : "Número de bloque",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "29f6cd5d-fc88-7024-675a-9e318a08f459",
+  "name" : "cta_field",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "4946f545-c420-450c-8372-c2cd03b8d6e8"
+} ]

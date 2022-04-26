@@ -1,0 +1,107 @@
+[ {
+  "id" : "2db1e6a1-0441-774e-9300-8b2a4aa9a1d2",
+  "name" : "padding_section",
+  "display_width" : null,
+  "label" : "Padding section",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "60px 0"
+}, {
+  "id" : "4826b49a-41a7-96c0-aeee-54be1a783240",
+  "name" : "titulo",
+  "display_width" : null,
+  "label" : "Titulo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Brazilian Butt Lift Explained"
+}, {
+  "id" : "08881ef6-8f1b-fcb9-ebee-4704d5ca2d3c",
+  "name" : "index",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "843833c4-b097-b07f-2648-c95ce2bab33e",
+    "name" : "texto",
+    "display_width" : null,
+    "label" : "texto",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "BBL Process"
+  }, {
+    "id" : "55ad905a-6f26-7e1d-8941-3b8a4cfbe1aa",
+    "name" : "ancla",
+    "display_width" : null,
+    "label" : "Ancla",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#retorno",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "texto" : "BBL Process",
+    "ancla" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#retorno",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "texto" : "BBL Process",
+    "ancla" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#retorno",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "texto" : "BBL Process",
+    "ancla" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#retorno",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

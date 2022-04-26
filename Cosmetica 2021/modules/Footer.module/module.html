@@ -1,0 +1,176 @@
+<footer>
+  <div class="container pt-5 pb-2">
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="https://procedures.cosmeticafl.com/hubfs/icono%20transparente.png" alt="Cosmetica" class="img-fluid" />
+      </div>
+      <div class="col-lg-3 d-flex flex-column justify-content-between mb-3">
+        <h5 class="mb-2">
+          Procedures
+        </h5>
+        <ul class="mb-3">
+          {% for item in module.men_1 %}
+          <li>
+            {% set href = item.link_field.url.href %}
+            {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            {% set rel = [] %}
+            {% if item.link_field.no_follow %}
+            {% do rel.append("nofollow") %}
+            {% endif %}
+            {% if item.link_field.open_in_new_tab %}
+            {% do rel.append("noopener") %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+               {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+               >
+              {{ item.text_field }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% set href = module.enlace_privacy.url.href %}
+        {% if module.enlace_privacy.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.enlace_privacy.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.enlace_privacy.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <div>
+          <a href="{{ href }}"
+             {% if module.enlace_privacy.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+            {{ module.texto_privacy }}
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 d-flex flex-column justify-content-between mb-3">
+        <ul class="second-list mb-3">
+          {% for item in module.men_2 %}
+          <li>
+            {% set href = item.link_field.url.href %}
+            {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            {% set rel = [] %}
+            {% if item.link_field.no_follow %}
+            {% do rel.append("nofollow") %}
+            {% endif %}
+            {% if item.link_field.open_in_new_tab %}
+            {% do rel.append("noopener") %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+               {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+               >
+              {{ item.text_field }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% set href = module.enlace_terms.url.href %}
+        {% if module.enlace_terms.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.enlace_terms.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.enlace_terms.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <div>
+          <a href="{{ href }}"
+             {% if module.enlace_terms.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+            {{ module.texto_terms }}
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <table style="height: 100px;">
+          <tbody>
+            <tr>
+              <td class="align-middle">
+                {% set href = module.enlace_facebook.url.href %}
+                {% if module.enlace_facebook.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if module.enlace_facebook.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if module.enlace_facebook.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.enlace_facebook.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   class="btn btn-primary btn-footer mb-3"><i class="fab fa-facebook-f"></i>
+                  Facebook
+                </a>
+
+
+              </td>
+            </tr>
+            <tr>
+              <td class="align-middle">
+                {% set href = module.enlace_youtube.url.href %}
+                {% if module.enlace_youtube.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if module.enlace_youtube.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if module.enlace_youtube.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.enlace_youtube.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   class="btn btn-primary btn-footer mb-3">
+                  <i class="fab fa-youtube"></i>YouTube
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-middle">
+                {% set href = module.enlace_instagram.url.href %}
+                {% if module.enlace_instagram.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if module.enlace_instagram.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if module.enlace_instagram.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.enlace_instagram.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   class="btn btn-primary btn-footer mb-3">
+                  <i class="fab fa-instagram"></i>Instagram
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 copyright-txt">
+        {{ module.footer_derechos_reservados }}
+      </div>
+    </div>
+  </div>
+</footer>

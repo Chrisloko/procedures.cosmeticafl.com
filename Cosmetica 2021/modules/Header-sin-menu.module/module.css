@@ -1,0 +1,28 @@
+header{
+  background: rgba(89,89,89,0.43);
+}
+
+nav#top-menu-nav, #top-menu, nav.et-menu-nav, .et-menu {
+    float: left;
+}
+#top-menu-nav, #top-menu {
+    line-height: 0;
+}
+
+
+#top-menu li {
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 22px;
+}
+#et-secondary-menu li, #top-menu li {
+    word-wrap: break-word;
+}
+.nav li {
+    position: relative;
+    line-height: 1em;
+}
+.nav li {
+    position: relative;
+    line-height: 1em;
+}

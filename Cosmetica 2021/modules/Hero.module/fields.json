@@ -1,0 +1,272 @@
+[ {
+  "id" : "9476122c-86e6-c03c-efd7-4111cc20c2e2",
+  "name" : "bg",
+  "display_width" : null,
+  "label" : "bg",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/header.jpg",
+    "alt" : "header",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 689,
+    "max_width" : 1920,
+    "max_height" : 689
+  }
+}, {
+  "id" : "88703584-f8b3-e9ff-dcc2-b813bce010df",
+  "name" : "bg_mobile",
+  "display_width" : null,
+  "label" : "Bg Mobile",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/shutterstock_613700813-min.jpg",
+    "alt" : "shutterstock_613700813-min",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 800,
+    "max_width" : 1920,
+    "max_height" : 800
+  }
+}, {
+  "id" : "e8d24392-01e1-4728-e631-f714118a1899",
+  "name" : "etiqueta_h1",
+  "display_width" : null,
+  "label" : "Etiqueta H1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Cosmetica"
+}, {
+  "id" : "867ea6d9-c928-2c13-e180-f94de0b54419",
+  "name" : "enlace_logo",
+  "display_width" : null,
+  "label" : "Enlace Logo",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "92e82f9b-c797-33b6-e732-303d8508b5d8",
+  "name" : "enlace_get",
+  "display_width" : null,
+  "label" : "Enlace Get",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/-temporary-slug-6ab292aa-2846-4ad4-bfa2-18d7a20afa6a?hs_preview=ZgJgcPoq-50194175129",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "5fd38e5a-b5ce-f07a-ff2e-7d7b4548f1a4",
+  "name" : "get_a_quote",
+  "display_width" : null,
+  "label" : "Get a quote",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CTA"
+}, {
+  "id" : "3280a78e-9641-a191-da94-2a86cfa495a5",
+  "name" : "enlace_get_2",
+  "display_width" : null,
+  "label" : "Enlace Get 2",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://procedures.cosmeticafl.com/-temporary-slug-6ab292aa-2846-4ad4-bfa2-18d7a20afa6a?hs_preview=ZgJgcPoq-50194175129",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "9991b4e1-fd8a-68a0-35bc-817b976fbce8",
+  "name" : "get_a_quote_2",
+  "display_width" : null,
+  "label" : "Get a quote 2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CTA"
+}, {
+  "id" : "6f715d43-4d18-6550-ae5d-d75058e67d84",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Don’t let age show"
+}, {
+  "id" : "27b1f400-cf59-cc84-6dd0-25f7a76f4956",
+  "name" : "p_rrafo_1",
+  "display_width" : null,
+  "label" : "Párrafo 1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Don't let age show"
+}, {
+  "id" : "f75b791b-9ea2-9021-9f17-e04d9eebffff",
+  "name" : "p_rrafo_2",
+  "display_width" : null,
+  "label" : "Párrafo 2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Are you struggling with Menopause? Or you have hormone acne? Or you just want to look young?"
+}, {
+  "id" : "23e21a90-ed39-a59e-43c9-caa5a97a223e",
+  "name" : "p_rrafo_3",
+  "display_width" : null,
+  "label" : "Párrafo 3",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Don't let the changes in your body affect you, fight it back."
+}, {
+  "id" : "fbd8fd66-0521-1d5b-11b4-e756c6723941",
+  "name" : "subt_tulo",
+  "display_width" : null,
+  "label" : "Subtítulo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Hormone Replacement Therapy"
+}, {
+  "id" : "87dc193e-f2cc-f7b2-ad13-9baf0fdc22b4",
+  "name" : "cta_1",
+  "display_width" : null,
+  "label" : "CTA 1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Free Consultation"
+}, {
+  "id" : "3848ca28-e3ad-a60a-4ba1-fd19bdbda5b7",
+  "name" : "cta_2",
+  "display_width" : null,
+  "label" : "CTA 2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our Safety Program"
+}, {
+  "id" : "a1bf7402-6cd9-8950-0f51-1e0d32ad9b5e",
+  "name" : "n_mero_de_bloque",
+  "display_width" : null,
+  "label" : "Número de bloque",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "18e4d2a6-65f7-f58b-d94e-341c092ec58f",
+  "name" : "formulario",
+  "display_width" : null,
+  "label" : "Formulario",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "d9550c6a-5485-4b8a-a794-6072e9e7e2ff",
+    "response_type" : "redirect",
+    "redirect_url" : "https://www.cosmeticafl.com/thank-you-faces/",
+    "redirect_id" : null,
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "7096193d-6498-d19d-b1a4-a98c3f0773a7",
+  "name" : "formulario_quote",
+  "display_width" : null,
+  "label" : "Formulario Quote",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "d9550c6a-5485-4b8a-a794-6072e9e7e2ff",
+    "response_type" : "redirect",
+    "redirect_url" : "https://www.cosmeticafl.com/thank-you-faces/",
+    "redirect_id" : null,
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "fbd2b4e1-2783-3042-acc3-4c4227d2f45f",
+  "name" : "mostrar_men_",
+  "display_width" : null,
+  "label" : "Mostrar Menú Web",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

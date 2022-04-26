@@ -1,0 +1,38 @@
+<section id="block-{{ module.n_mero_de_bloque }}" class="upper-lower-section" style="padding:{{module.padding_section}}">
+  <div class="container">
+    <div class="row">
+     
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-5 mb-4">
+        <h3 class="my-4">{{ module.subt_tulo }}</h3>
+        <div>
+          {{ module.richtext_field }}
+        </div>
+        {% if module.mostrar_cta_tel_fono %}
+        <div class="text-center">
+          <a href="tel:+{{ module.n_mero_cta }}" class="cta-call-btn">{{ module.texto_cta }}</a>
+        </div>
+        {% endif %}
+
+      </div>
+      
+      <div class="col-12 col-md-6 mt-4">
+        <h2>
+          {{ module.t_tulo }}
+        </h2>
+        <div class="form-container">
+          {% form
+            form_to_use="{{ module.form_field.form_id }}"
+            response_response_type="{{ module.form_field.response_type }}"
+            response_message="{{ module.form_field.message }}"
+            response_redirect_id="{{ module.form_field.redirect_id }}"
+            response_redirect_url="{{module.form_field.redirect_url}}"
+            gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+          %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

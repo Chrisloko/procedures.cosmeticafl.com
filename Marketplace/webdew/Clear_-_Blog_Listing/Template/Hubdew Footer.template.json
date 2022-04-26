@@ -1,0 +1,121 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1562570407789144",
+        "label" : "CLEAR - Footer With Copy Right",
+        "type" : "custom_widget",
+        "params" : {
+          "copyright" : {
+            "button_link" : "https://marketplace.hubspot.com/products/worductdia/dew-template-pack",
+            "copyright_content" : "Copyright © 2021 | Cosmetica Plastic Surgery & Anti-Aging. All Rights Reserved. Individual results may vary. |Designed by Cosmetica Plastic Surgery & Anti-Aging"
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "footer_column_1" : {
+            "footer_about_us" : "<p>Cometica is your best choice in the area of Port St. Lucie to get plastic and antiaging procedures.</p>\n<p>&nbsp;</p>",
+            "footer_logo" : {
+              "alt" : "cosmetica-logo",
+              "height" : 71,
+              "override_inherited_src" : true,
+              "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/cosmetica-logo.png",
+              "width" : 321
+            },
+            "footer_social" : [ {
+              "footer_social_icons" : "fab fa-facebook-f",
+              "social_links" : "#",
+              "social_media_icons" : {
+                "name" : "facebook-f",
+                "type" : "REGULAR",
+                "unicode" : "f39e"
+              }
+            }, {
+              "footer_social_icons" : "fab fa-youtube",
+              "social_links" : "#",
+              "social_media_icons" : {
+                "name" : "youtube",
+                "type" : "REGULAR",
+                "unicode" : "f167"
+              }
+            }, {
+              "footer_social_icons" : "fab fa-twitter",
+              "social_links" : "#",
+              "social_media_icons" : {
+                "name" : "twitter",
+                "type" : "REGULAR",
+                "unicode" : "f099"
+              }
+            }, {
+              "footer_social_icons" : "fab fa-linkedin-in",
+              "social_links" : "#",
+              "social_media_icons" : {
+                "name" : "linkedin-in",
+                "type" : "REGULAR",
+                "unicode" : "f0e1"
+              }
+            }, {
+              "footer_social_icons" : "fab fa-instagram",
+              "social_links" : "#",
+              "social_media_icons" : {
+                "name" : "instagram",
+                "type" : "REGULAR",
+                "unicode" : "f16d"
+              }
+            } ],
+            "footer_social_media" : true,
+            "select_logo_option" : "Customlogo"
+          },
+          "overrideable" : false,
+          "path" : "/Marketplace/webdew/Clear_-_Blog_Listing/Custom Module/CLEAR - Footer With Copy Right",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "HUBDEW - Footer With Copy Right",
+          "wrapping_html" : "",
+          "footer_column_3" : {
+            "footer_heading_2" : "",
+            "form" : {
+              "form_id" : "06a1bcc2-1a13-4baa-a4b7-052006bfaeba",
+              "response_type" : "inline",
+              "message" : "Thanks for submitting the form.",
+              "form_type" : "HUBSPOT"
+            }
+          }
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

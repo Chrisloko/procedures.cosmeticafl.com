@@ -1,0 +1,40 @@
+<section id="double-row" class="" style="background-color: {{ module.color_bg.color }}; padding:{{ module.padding_seccion }}">
+  <div class="container">
+    <div class="row">
+      <div class="boxes w-100">
+        <div class="boxes-wrapper w-100">
+          {% for box in module.boxes %}
+          <div class="box-wrapper box" style="width:{{module.columns}}%; background-color:{{box.color_fondo.color}}">
+            <div class="body" style="">
+              <img class="icono" src="{{ box.icono.src }}" alt="icono" width="82" height="82" loading="lazy">
+              {{ box.texto_caja }}
+              <!--  <mg class="logo" src="https://lp.cdg.com.mx/hubfs/sitio-web-2021/icon-cdg.svg" alt="logo CDG"> -->  
+              {% if box.con_boton %}
+              <a class="btn-yellow"  href="{{box.liga_boton.url.href}}">
+                {{box.text_boton}}
+              </a>
+              {% endif %}
+            </div>      
+          </div>
+          {% endfor %}        
+        </div>
+      </div>
+      
+      {% if module.con_boton %}
+      <div class="cont-btn">
+        {% set href = module.liga_boton.url.href %}
+        {% if module.liga_boton.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.liga_boton.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.liga_boton.rel %}rel="{{ module.liga_boton.rel }}"{% endif %}
+           class="btn boton">
+          {{ module.texto_boton }}
+        </a>
+
+      </div>
+      {% endif %}  
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+<section id="pruebas-psi" class="py-5" style="background-color:{{ module.color_fondo }}">
+  <div class="container">
+    {% if module.con_titulo %}
+      <div class="row">
+        <div class="col-lg-12 m-auto">
+          {{ module.richtext_field }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="row">
+      <div class="boxes">
+        <div class="boxes-wrapper">  
+          {% for box in module.boxes %}
+          <div class="box-wrapper box" style="width:{{module.columns}}%">
+            {% if box.imagen_con_o_sin_liga %}
+             <div class="img-wrapper lazy" style="background-image: url({{box.image.src}}); height: 180px;background-size: cover;" title="{{box.image.alt}}"> 
+              {% if box.link.url.href %}
+              {% set href = box.link.url.href %}
+              {% if box.link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if box.link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if box.link.rel %}rel="{{ box.link.rel }}"{% endif %}
+                 >&nbsp;
+              </a>
+              {% endif %}
+            </div>
+            {% else %}
+              {% if module.con_imagen %}
+                <div class="img-wrapper lazy" style="background-image: url({{box.image.src}}); height: 150px;background-size: cover;" title="{{box.image.alt}}"></div> 
+              {% endif %}
+              
+            {% endif %}
+
+            <div class="body">
+              <div class="text-box mb-3">
+                {{box.text}}
+              </div>  
+              {% if box.activar_boton %}
+
+              {% set href = box.link.url.href %}
+              {% if box.link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if box.link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if box.link.rel %}rel="{{ box.link.rel }}"{% endif %}
+                 class="btn dark-blue-btn font-weight-bold">
+                {{ box.texto_cta }}
+              </a>
+              {% endif %}
+            </div>     
+          </div>
+          {% endfor %}        
+        </div>
+      </div>
+      {% if module.con_boton %}
+        <div class="cont-btn">
+          <a class="btn light-blue-btn" href="{{ module.liga_boton }}">{{ module.texto_boton }}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

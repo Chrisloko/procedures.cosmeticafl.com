@@ -1,0 +1,125 @@
+[ {
+  "id" : "4cfd74a3-3d94-5d12-baaa-ae82aa69c157",
+  "name" : "numero_de_bloque",
+  "display_width" : null,
+  "label" : "Numero de bloque",
+  "required" : false,
+  "locked" : true,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "d338c3e6-9221-4bff-52db-f6291c1c0c24",
+  "name" : "padding_section",
+  "display_width" : null,
+  "label" : "Padding section",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "0 0;"
+}, {
+  "id" : "7f2a9800-0874-5053-66d0-6288c3b88af4",
+  "name" : "t_tulo",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "For your complimentary consultation please call us or submit your request below"
+}, {
+  "id" : "612bf4ea-bbed-6449-fbf3-66282d86398a",
+  "name" : "subt_tulo",
+  "display_width" : null,
+  "label" : "Subtítulo",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "5907ca2d-959d-dbf2-210f-b559ba9e2563",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/free-consultation-445x389.jpg",
+    "alt" : "free-consultation-445x389",
+    "loading" : "lazy",
+    "width" : 445,
+    "height" : 389,
+    "max_width" : 445,
+    "max_height" : 389
+  }
+}, {
+  "id" : "606aa165-3c10-e0d9-2304-778a6508323c",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Contenido",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext"
+}, {
+  "id" : "c6e2cb5d-d67b-d2dc-1701-e905f114f431",
+  "name" : "mostrar_cta_tel_fono",
+  "display_width" : null,
+  "label" : "Mostrar CTA Teléfono",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "3986c3f3-aa2d-3617-a2c4-8b5e95070981",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Formulario",
+  "required" : false,
+  "locked" : true,
+  "type" : "form",
+  "default" : {
+    "form_id" : "d8aa45bf-6ab2-4884-9c9a-c8da3426993d",
+    "response_type" : "redirect",
+    "redirect_url" : "https://www.cosmeticafl.com/thank-you-botox/",
+    "redirect_id" : null,
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "bb051a01-23f6-6597-5420-028c7ba17ebc",
+  "name" : "texto_cta",
+  "display_width" : null,
+  "label" : "Texto CTA",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Call Us 772-337-1717"
+}, {
+  "id" : "2333f2eb-645d-b8fa-b2e6-acd646e8d42c",
+  "name" : "numero_cta",
+  "display_width" : null,
+  "label" : "Numero CTA",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "7723371717"
+} ]

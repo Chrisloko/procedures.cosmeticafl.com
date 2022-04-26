@@ -1,0 +1,31 @@
+[ {
+  "id" : "ab8e1bce-2955-ec04-fc8f-8ae6fddc515c",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/logo.png",
+    "alt" : "logo",
+    "loading" : "lazy",
+    "width" : 50,
+    "height" : 50,
+    "max_width" : 50,
+    "max_height" : 50
+  }
+}, {
+  "id" : "deb58a40-235f-fdd4-511c-c631e5ec174c",
+  "name" : "menu_field",
+  "display_width" : null,
+  "label" : "Menú",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "default" : 49483310215
+} ]

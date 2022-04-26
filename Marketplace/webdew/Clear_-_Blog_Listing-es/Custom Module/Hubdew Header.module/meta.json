@@ -1,0 +1,17 @@
+{
+  "global" : false,
+  "icon" : "https://www.webdew.com/hubfs/Module%20Icons/header.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 49725127222,
+  "css_assets" : [ {
+    "url" : "https://f.hubspotusercontent00.net/hubfs/8958354/bootstrap.min.css",
+    "autoload" : true,
+    "name" : "bootstrap.min.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://f.hubspotusercontent00.net/hubfs/8958354/bootstrap.min.js",
+    "autoload" : true,
+    "name" : "bootstrap.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

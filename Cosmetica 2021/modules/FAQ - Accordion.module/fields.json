@@ -1,0 +1,67 @@
+[ {
+  "id" : "be696976-b954-fa30-5e77-842f6bb24f43",
+  "name" : "padding_seccion",
+  "display_width" : null,
+  "label" : "Padding seccion",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "60px 0"
+}, {
+  "id" : "3f69e39f-63ae-229a-1358-0a85b6008b0e",
+  "name" : "titulo",
+  "display_width" : null,
+  "label" : "titulo",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2 class=\"heading\">FREQUENTLY ASKED QUESTIONS</h2>"
+}, {
+  "id" : "d98e1e31-dd55-e77b-08ce-670e5abe8ffc",
+  "name" : "questions",
+  "display_width" : null,
+  "label" : "questions",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "9857a418-da43-000b-e29f-c6c2fb71a40e",
+    "name" : "question",
+    "display_width" : null,
+    "label" : "Question",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "What's the difference between a BBL and Implants"
+  }, {
+    "id" : "e36ccafe-1455-96fc-d6ad-180e1e38bf8f",
+    "name" : "answer",
+    "display_width" : null,
+    "label" : "Answer",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "question" : "What's the difference between a BBL and Implants",
+    "answer" : "Lorem"
+  } ]
+} ]

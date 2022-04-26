@@ -1,0 +1,16 @@
+<div class="{{ module.add_custom_class }} {% if module.text_alignment == 'text_left' %}text-left {% elif module.text_alignment == 'text_center' %}text-center {% elif module.text_alignment == 'text_right' %}text-right {% endif %}">
+  {% if module.heading_types == 'h1' %}
+  <h1>{{ module.heading }}</h1>
+  {% elif module.heading_types == 'h2' %}
+  <h2>{{ module.heading }}</h2>
+  {% elif module.heading_types == 'h3' %}
+  <h3>{{ module.heading }}</h3>
+  {% elif module.heading_types == 'h4' %}
+  <h4>{{ module.heading }}</h4>
+  {% elif module.heading_types == 'h5' %}
+  <h5>{{ module.heading }}</h5>
+  {% elif module.heading_types == 'h6' %}
+  <h6>{{ module.heading }}</h6>
+  {% endif %}
+  <p>{{ module.subheading }}</p>
+</div>

@@ -1,0 +1,104 @@
+[ {
+  "id" : "8f69104b-6ee9-45b0-6d70-ed52357483f0",
+  "name" : "n_mero_de_bloque",
+  "display_width" : null,
+  "label" : "Número de bloque",
+  "required" : false,
+  "locked" : true,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number"
+}, {
+  "id" : "ea66acdc-97c0-05ff-c143-c3666bca427c",
+  "name" : "t_tulo",
+  "display_width" : null,
+  "label" : "Título",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "NUESTRAS CERTIFICACIONES"
+}, {
+  "id" : "a2f60c60-2df5-c52d-ed87-2e74c3cf8b37",
+  "name" : "p_rrafo",
+  "display_width" : null,
+  "label" : "Párrafo",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p style=\"font-size: 18px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n<p style=\"font-size: 18px;\">Suspendisse magna mi, vulputate in mi eget, sagittis rhoncus est.</p>"
+}, {
+  "id" : "c669a8e4-6bb1-654c-3dad-c737793147e0",
+  "name" : "certificaciones",
+  "display_width" : null,
+  "label" : "Certificaciones",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "8cd0adfb-a3fd-d3e8-1279-97c607cd9a76",
+    "name" : "certificaci_n",
+    "display_width" : null,
+    "label" : "Certificación",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/product-faq-img.png",
+      "alt" : "product-faq-img",
+      "loading" : "lazy",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "certificaci_n" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/product-faq-img.png",
+      "alt" : "product-faq-img",
+      "loading" : "lazy",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    }
+  }, {
+    "certificaci_n" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/product-faq-img.png",
+      "alt" : "product-faq-img",
+      "loading" : "lazy",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    }
+  }, {
+    "certificaci_n" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent00.net/hubfs/8958354/Cosmetica%202021/product-faq-img.png",
+      "alt" : "product-faq-img",
+      "loading" : "lazy",
+      "width" : 250,
+      "height" : 250,
+      "max_width" : 250,
+      "max_height" : 250
+    }
+  } ]
+} ]

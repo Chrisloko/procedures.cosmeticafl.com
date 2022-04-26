@@ -1,0 +1,13 @@
+<section id="block-{{ module.n_mero_de_bloque }}" class="video-section py-5 mb-5">
+  <div class="container">
+    <div class="row position-relative">
+      <div class="col-12 owl-carousel owl-theme owl-videos px-5">
+        {% for item in module.grupo_de_videos %}
+        <div class="item embed-responsive embed-responsive-16by9">
+          <iframe src="{{item.video_youtube.url.href}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item"></iframe>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

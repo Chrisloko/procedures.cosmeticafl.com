@@ -1,0 +1,161 @@
+<style>
+#block-2 .form-title, #block-3 .form-title {
+  display:none;
+}
+.upper-lower-section h2{
+  color: #01487c;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px){
+  .upper-lower-section h2 {
+    font-size: 30px;
+  }
+}
+
+fieldset {
+  line-height:1;
+}
+fieldset.form-columns-1 .input {
+    margin-right: 0px!important;
+}
+fieldset.form-columns-2 .hs_email .input{
+  margin-right: 0px!important;
+}
+fieldset.form-columns-2 .hs_birthday .input{
+  margin-right: 0px!important;
+}
+fieldset.form-columns-2 .hs_lastname .input{
+  margin-right: 0px!important;
+}
+fieldset .hs-input {
+  border: 1px solid transparent;
+  background-color:#dae9e6;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: 700;
+  color: #01487c;
+  width: 100%;
+}
+fieldset .hs-input::placeholder {
+  font-weight: 700;
+  color: #01487c;
+}
+.hs_procedure_of_interest, .hs_upload_photos, .hs_message {
+  margin-top:10px;
+}
+#block-3 textarea {
+  min-height:60px;
+}
+.hs-error-msgs{
+  color: #FF0000;
+  font-size: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset.form-columns-1, fieldset.form-columns-2, fieldset.form-columns-3{
+  max-width: unset !important;
+}
+
+.hs-button{
+      background: #01487c !important;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 5px 38px;
+    transition: 0.3s ease!important;
+}
+
+.hs-button:hover{
+ background: #4aadce !important; 
+ color: #01487c!important;
+}
+
+fieldset label{
+  margin-bottom: 2px;
+}
+
+.mt-90{
+  margin-top: 90px;
+}
+
+fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+}
+
+.hs-input{
+  height: auto !important;
+}
+.actions {
+  text-align:right;
+}
+@media(max-width: 768px){
+  .mt-90{
+    margin-top: 0;
+  }
+  
+  fieldset.form-columns-2 .hs-input {
+    width: 100% !important;
+  }
+  fieldset.form-columns-2 .input {
+    margin-right:0!important
+  }
+  fieldset .hs-input {
+    font-size: 14px;
+  }
+}
+</style>
+<section id="block-{{ module.n_mero_de_bloque }}" class="upper-lower-section" style="padding:{{module.padding_section}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>
+          {{ module.t_tulo }}
+        </h2>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-5 mb-4">
+        <h3 class="my-4">{{ module.subt_tulo }}</h3>
+        {% if module.image_field.src %}
+        {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+        {% if module.image_field.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;" width="445"; height="389"' %}
+        {% elif module.image_field.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+        <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid mb-4" loading="lazy" >
+        {% endif %}
+        <div>
+          {{ module.richtext_field }}
+        </div>
+        {% if module.mostrar_cta_tel_fono %}
+        <div class="text-center">
+          <a href="tel:+{{ module.n_mero_cta }}" class="cta-call-btn">{{ module.texto_cta }}</a>
+        </div>
+        {% endif %}
+
+      </div>
+      <div class="col-12 col-md-6 mt-4">
+        <div class="form-container {{ "mt-90" if module.subt_tulo != "" }}">
+          {% form
+            form_to_use="{{ module.form_field.form_id }}"
+            response_response_type="{{ module.form_field.response_type }}"
+            response_message="{{ module.form_field.message }}"
+            response_redirect_id="{{ module.form_field.redirect_id }}"
+            response_redirect_url="{{module.form_field.redirect_url}}"
+            gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+          %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

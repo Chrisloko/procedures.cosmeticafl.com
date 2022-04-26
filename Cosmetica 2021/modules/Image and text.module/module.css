@@ -1,0 +1,23 @@
+#single-image{
+  
+}
+#single-image h2{
+  color: #01487c;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom:30px;
+}
+#single-image .image{
+  max-width:100%;
+  width:100%;
+  object-fit:cover;
+  height:auto;
+}
+@media(max-width:767px){
+  #single-image .image{
+    max-height:100%!important;
+  }
+  .mt-mob{
+    margin-top:15px;
+  }
+}

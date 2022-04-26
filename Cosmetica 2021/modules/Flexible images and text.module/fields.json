@@ -1,0 +1,279 @@
+[ {
+  "id" : "a7015538-0e8a-2771-3b86-4026b06239ca",
+  "name" : "color_fondo",
+  "display_width" : null,
+  "label" : "Color Fondo",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#E2E2E2"
+}, {
+  "id" : "4482cc1e-2141-aff6-111c-17e6288d82eb",
+  "name" : "con_titulo",
+  "display_width" : null,
+  "label" : "Con titulo",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "27139efb-43cc-25d5-0a66-552933ad1f2f",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Texto enriquecido",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2 class=\"text-top\">BBL Techniques</h2>"
+}, {
+  "id" : "6939a0e1-37e3-00ec-cc33-438b7581cd83",
+  "name" : "columns",
+  "display_width" : null,
+  "label" : "columns",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "100", "1" ], [ "48", "2" ], [ "31.33", "3" ], [ "24", "4" ] ],
+  "type" : "choice",
+  "default" : "24"
+}, {
+  "id" : "d4695408-ac3b-addc-8342-e0628cf07de9",
+  "name" : "boxes",
+  "display_width" : null,
+  "label" : "boxes",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "30544432-fd54-04f8-b343-af0f2aa53f32",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Imagen",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/Imported_Blog_Media/cosmetica-BBL.jpg",
+      "alt" : "cosmetica-BBL",
+      "width" : 626,
+      "height" : 417,
+      "max_width" : 626,
+      "max_height" : 417
+    }
+  }, {
+    "id" : "1bf0a7d6-23a8-a08d-0217-4a95a2f1d068",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Nulla commodo risus in pellentesque facilisis. Vestibulum quis justo eu ligula elementum mollis. Ut interdum eu risus a lobortis.</p>"
+  }, {
+    "id" : "318b51e7-0060-b5ea-f321-1863e4387ccd",
+    "name" : "imagen_con_o_sin_liga",
+    "display_width" : null,
+    "label" : "Imagen con o sin liga",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "56861a7c-9bf1-01f2-950d-c772cefd5243",
+    "name" : "activar_boton",
+    "display_width" : null,
+    "label" : "Activar/Desactivar botón",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "ce1f7681-55c0-b91c-0027-495830d96786",
+    "name" : "texto_cta",
+    "display_width" : null,
+    "label" : "Texto CTA",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "LEARN MORE"
+  }, {
+    "id" : "b9f5e052-ced4-6668-7620-45bdc6965e98",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Enlace",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "hubspot.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/Imported_Blog_Media/cosmetica-BBL.jpg",
+      "alt" : "cosmetica-BBL",
+      "width" : 626,
+      "height" : 417,
+      "max_width" : 626,
+      "max_height" : 417
+    },
+    "text" : "<p>Nulla commodo risus in pellentesque facilisis. Vestibulum quis justo eu ligula elementum mollis. Ut interdum eu risus a lobortis.</p>",
+    "imagen_con_o_sin_liga" : false,
+    "activar_boton" : true,
+    "texto_cta" : "LEARN MORE",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "hubspot.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/Imported_Blog_Media/cosmetica-BBL.jpg",
+      "alt" : "cosmetica-BBL",
+      "width" : 626,
+      "height" : 417,
+      "max_width" : 626,
+      "max_height" : 417
+    },
+    "text" : "<p>Nulla commodo risus in pellentesque facilisis. Vestibulum quis justo eu ligula elementum mollis. Ut interdum eu risus a lobortis.</p>",
+    "imagen_con_o_sin_liga" : false,
+    "activar_boton" : true,
+    "texto_cta" : "LEARN MORE",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "hubspot.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/Imported_Blog_Media/cosmetica-BBL.jpg",
+      "alt" : "cosmetica-BBL",
+      "width" : 626,
+      "height" : 417,
+      "max_width" : 626,
+      "max_height" : 417
+    },
+    "text" : "<p>Nulla commodo risus in pellentesque facilisis. Vestibulum quis justo eu ligula elementum mollis. Ut interdum eu risus a lobortis.</p>",
+    "imagen_con_o_sin_liga" : false,
+    "activar_boton" : true,
+    "texto_cta" : "LEARN MORE",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "hubspot.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image" : {
+      "src" : "https://fs.hubspotusercontent00.net/hubfs/8958354/Imported_Blog_Media/cosmetica-BBL.jpg",
+      "alt" : "cosmetica-BBL",
+      "width" : 626,
+      "height" : 417,
+      "max_width" : 626,
+      "max_height" : 417
+    },
+    "text" : "<p>Nulla commodo risus in pellentesque facilisis. Vestibulum quis justo eu ligula elementum mollis. Ut interdum eu risus a lobortis.</p>",
+    "imagen_con_o_sin_liga" : false,
+    "activar_boton" : true,
+    "texto_cta" : "LEARN MORE",
+    "link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "hubspot.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "e4452bbe-68da-8fc9-6309-936dca924f64",
+  "name" : "con_boton",
+  "display_width" : null,
+  "label" : "Con boton",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "0f4bb3da-77f0-20e6-fe82-98a8877f18c1",
+  "name" : "texto_boton",
+  "display_width" : null,
+  "label" : "Texto Boton",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "FREE CONSULTATION"
+}, {
+  "id" : "08823445-6e99-a7e0-8c56-f4d99c2c934d",
+  "name" : "liga_boton",
+  "display_width" : null,
+  "label" : "Liga Boton",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://cdg.com.mx/leadership-assessment-center.htm",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "a4e4bb8c-3de1-273e-0da2-58b753d69d99",
+  "name" : "con_imagen",
+  "display_width" : null,
+  "label" : "Con imagen",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

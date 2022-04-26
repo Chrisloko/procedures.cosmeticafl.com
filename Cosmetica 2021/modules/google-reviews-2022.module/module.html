@@ -1,0 +1,49 @@
+<section id="block-{{ module.n_mero_de_bloque }}" class="carousel-section" style="background: {{ module.bg_color.color if module.bg_color.color != "" else "#007bff" }};">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+       <img src="https://procedures.cosmeticafl.com/hubfs/cosmeticafl-60-1-4-1.png" width="47" height="47" class="logo-review" loading="lazy">
+        <h3 class="title">
+          Cosmetica Plastic Surgery &amp; Anti Aging
+        </h3>
+        <p>
+          <a class="address" href="https://g.page/Cosmetica-PlasticSurgery?share" target="_blank">» 1941 SE Port St. Lucie Blvd, Port St. Lucie, FL 34952</a>
+        </p>
+        <img src="https://procedures.cosmeticafl.com/hubfs/review-rating-1-300x129-1-1.jpg" class="google-logo">
+      </div>
+      <div class="col-12">
+        <div class="reviews owl-carousel owl-theme px-5">
+          {% for item in module.carrusel %}
+          <div class="item">
+            <div class="dialog">
+              <div class="inner-box-cont">
+                 <img class="quotes" src="https://procedures.cosmeticafl.com/hubfs/quotes.jpg">
+                  {{ item.texto_resena }}
+              </div>
+              <a href="https://maps.google.com/?cid=3755978870699734558" target="_blank" rel="nofollow noreferrer" class="wprevpro_t1_site_logo_a">
+                <img src="https://cosmeticafl.com/wp-content/plugins/wp-google-places-review-slider/public/partials/imgs/google_small_icon.png" alt="Google Logo" class="wprevpro_t1_site_logo siteicon" loading="lazy">
+              </a>
+            </div>
+            <div class="name">
+              <div>
+                <div class="letter" style="background-color:{{ item.color_fondo_letra.color }}">
+                  {{ item.letra_inicial }}
+                </div>
+              </div>
+              
+              <h3 class="full-name">
+                {{ item.nombre }}
+              </h3>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-12">
+        <h4>
+          <a class="review-btn" href="https://search.google.com/local/writereview?placeid=ChIJLV6xD5Lo3ogRHjbuA-LqHzQ" target="_blank">» LEAVE A REVIEW</a>
+        </h4>
+      </div>
+    </div>
+  </div>
+</section>
